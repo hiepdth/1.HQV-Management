@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-image: url('.\src\images\background.jpg');;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="129.0" prefHeight="771.0" prefWidth="150.0" style="-fx-background-color: #6b5031;" />
+      <Pane layoutX="-1.0" prefHeight="128.0" prefWidth="1288.0" style="-fx-background-color: #c7bb9b;" />
+      <JFXMasonryPane HSpacing="50.0" VSpacing="50.0" layoutX="160.0" layoutY="172.0" prefHeight="731.0" prefWidth="1140.0">
+         <children>
+            <JFXButton contentDisplay="TOP" prefHeight="169.0" prefWidth="152.0" ripplerFill="#8d3131" style="-fx-background-color: #e4e3e3;" stylesheets="@../../style.css" text="Vàng ta" textFill="#6b0e0e">
+               <graphic>
+                  <ImageView fitHeight="135.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/btmc.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </JFXMasonryPane>
+      <JFXTextField layoutX="154.0" layoutY="142.0" prefHeight="26.0" prefWidth="635.0" />
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="755.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-search-40.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
