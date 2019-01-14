@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import com.jfoenix.validation.*?>
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.effect.*?>
@@ -12,31 +13,255 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-image: url('.\src\images\background.jpg');;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Managent.ManagementFrame">
    <children>
-      <Pane layoutY="129.0" prefHeight="771.0" prefWidth="150.0" style="-fx-background-color: #6b5031;" />
-      <Pane layoutX="-1.0" prefHeight="128.0" prefWidth="1288.0" style="-fx-background-color: #c7bb9b;" />
-      <JFXMasonryPane HSpacing="50.0" VSpacing="50.0" layoutX="160.0" layoutY="172.0" prefHeight="731.0" prefWidth="1140.0">
-         <children>
-            <JFXButton contentDisplay="TOP" prefHeight="169.0" prefWidth="152.0" ripplerFill="#8d3131" style="-fx-background-color: #e4e3e3;" stylesheets="@../../style.css" text="Vàng ta" textFill="#6b0e0e">
-               <graphic>
-                  <ImageView fitHeight="135.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/btmc.jpg" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font name="Bodoni MT Black Italic" size="23.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </JFXMasonryPane>
-      <JFXTextField layoutX="154.0" layoutY="142.0" prefHeight="26.0" prefWidth="635.0" />
-      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="755.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="900.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
-            <Image url="@../../images/icons8-search-40.png" />
+            <Image url="@../../images/diamond-ring-4k-wedding-background.jpg" />
          </image>
       </ImageView>
+      <AnchorPane prefHeight="109.0" prefWidth="1300.0" style="-fx-background-color: #3d4056;">
+         <children>
+            <JFXButton layoutX="891.0" layoutY="38.0" prefHeight="35.0" prefWidth="139.0" text="DinhHiep" textFill="#f2f5f5">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="84.0" fitWidth="95.0" layoutX="48.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="114.0" prefHeight="786.0" prefWidth="174.0" style="-fx-background-color: #3d4056;">
+         <children>
+            <VBox prefHeight="786.0" prefWidth="174.0">
+               <children>
+                  <JFXButton fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="HOME" textFill="#f5e7e7">
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/home.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="vangta" alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="VÀNG TA" textFill="#f5e7e7">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vangta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="vangtay" alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="VÀNG TÂY" textFill="#f5e7e7">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vangtay.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="ngoaite" alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="NGOẠI TỆ" textFill="#f5e7e7">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/ngoaite.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="history" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="LỊCH SỬ" textFill="#f5e7e7">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/lichsu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="chart" alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="BIỂU ĐỒ" textFill="#f5e7e7">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/chart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="THOÁT" textFill="#f5e7e7">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <JFXTextField layoutX="276.0" layoutY="114.0" prefHeight="25.0" prefWidth="290.0" />
+      <JFXButton alignment="CENTER_RIGHT" layoutX="534.0" layoutY="110.0" prefHeight="30.0" prefWidth="8.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="220.0" layoutY="118.0" prefHeight="25.0" prefWidth="54.0" text="Tìm kiếm:" />
+      <ScrollPane fx:id="vangtaProducts" layoutX="187.0" layoutY="160.0" prefHeight="740.0" prefWidth="1114.0">
+         <content>
+            <FlowPane fx:id="vangtaPane" hgap="30.0" prefHeight="740.0" prefWidth="1114.0" style="-fx-background-color: #3d4956;" vgap="30.0">
+               <children>
+                  <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" graphicTextGap="15.0" prefHeight="120.0" prefWidth="150.0" stylesheets="@../../style.css" text="Năm phân">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vangta/namphan.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children></FlowPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="vangtayProducts" layoutX="187.0" layoutY="160.0" prefHeight="740.0" prefWidth="1114.0" visible="false">
+         <content>
+            <FlowPane fx:id="vangtayPane" hgap="30.0" prefHeight="740.0" prefWidth="1114.0" style="-fx-background-color: #3d4956;" vgap="30.0">
+               <children>
+                  <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" graphicTextGap="15.0" prefHeight="120.0" prefWidth="150.0" stylesheets="@../../style.css" text="Năm phân">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vangta/namphan.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="ngoaiteProducts" layoutX="187.0" layoutY="160.0" prefHeight="740.0" prefWidth="1114.0" visible="false">
+         <content>
+            <FlowPane fx:id="ngoaitePane" hgap="30.0" prefHeight="740.0" prefWidth="1114.0" style="-fx-background-color: #3d4956;" vgap="30.0">
+               <children>
+                  <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" graphicTextGap="15.0" prefHeight="120.0" prefWidth="150.0" stylesheets="@../../style.css" text="Năm phân">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vangta/namphan.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" graphicTextGap="15.0" prefHeight="120.0" prefWidth="150.0" stylesheets="@../../style.css" text="Năm phân">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/vangta/namphan.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

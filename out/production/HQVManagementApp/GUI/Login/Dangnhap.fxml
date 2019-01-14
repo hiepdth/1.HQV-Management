@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="547.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Login.ManagementLogin">
+   <children>
+      <ImageView fitHeight="607.0" fitWidth="1000.0" layoutY="-6.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/login/1.png" />
+         </image></ImageView>
+      <AnchorPane layoutX="251.0" layoutY="152.0" prefHeight="350.0" prefWidth="500.0" style="-fx-border-color: #2d3965; -fx-border-radius: 2em;">
+         <children>
+            <JFXButton layoutX="197.0" layoutY="272.0" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #27b879;" text="Login" textFill="#b5223d">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/login/in.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField focusColor="#c94131" layoutX="168.0" layoutY="141.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#da6845" layoutX="168.0" layoutY="203.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="80.0" layoutY="166.0" prefHeight="25.0" text="User" textFill="#070705">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="228.0" prefHeight="25.0" text="Password" textFill="#070705">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="363.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/login/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="363.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/login/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="107.0" fitWidth="123.0" layoutX="197.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="260.0" layoutY="102.0" prefHeight="33.0" prefWidth="464.0" text="Công ty Vàng Bạc Đá Quý Kim Dung - Hải Quyên" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="267.0" layoutY="528.0" prefHeight="17.0" prefWidth="500.0" text="Design by Dinh Hiep" textFill="#8d1111" />
+   </children>
+</AnchorPane>
