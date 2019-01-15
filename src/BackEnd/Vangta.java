@@ -1,16 +1,7 @@
 package BackEnd;
 
-public class Vangta extends Production{
+public class Vangta extends Gold{
     public Vangta(){
-        
-    }
-    @Override
-    public String readDatabase() {
-        return null;
-    }
-
-    @Override
-    public void updateProduction() {
-
+        super();
     }
 }
