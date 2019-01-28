@@ -19,7 +19,7 @@
          </image></ImageView>
       <AnchorPane layoutX="251.0" layoutY="152.0" prefHeight="350.0" prefWidth="500.0" style="-fx-border-color: #2d3965; -fx-border-radius: 2em;">
          <children>
-            <JFXButton layoutX="197.0" layoutY="272.0" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #27b879;" text="Login" textFill="#b5223d">
+            <JFXButton fx:id="login" layoutX="197.0" layoutY="272.0" onAction="#handleAction" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #27b879;" text="Login" textFill="#b5223d">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -34,12 +34,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXTextField focusColor="#c94131" layoutX="168.0" layoutY="141.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
+            <JFXTextField fx:id="taikhoan" focusColor="#c94131" layoutX="168.0" layoutY="141.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
                <font>
                   <Font size="16.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField focusColor="#da6845" layoutX="168.0" layoutY="203.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
+            <JFXPasswordField fx:id="matkhau" focusColor="#da6845" layoutX="168.0" layoutY="203.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
                <font>
                   <Font size="16.0" />
                </font>
@@ -69,6 +69,8 @@
                   <Image url="@../../images/avatar.png" />
                </image>
             </ImageView>
+            <JFXSpinner fx:id="wait" layoutX="353.0" layoutY="272.0" visible="false" />
+            <AnchorPane fx:id="enter" layoutX="110.0" layoutY="123.0" prefHeight="37.0" prefWidth="295.0" />
          </children>
       </AnchorPane>
       <Label alignment="CENTER" layoutX="260.0" layoutY="102.0" prefHeight="33.0" prefWidth="464.0" text="Công ty Vàng Bạc Đá Quý Kim Dung - Hải Quyên" textFill="WHITE">
@@ -77,5 +79,17 @@
          </font>
       </Label>
       <Label alignment="CENTER" layoutX="267.0" layoutY="528.0" prefHeight="17.0" prefWidth="500.0" text="Design by Dinh Hiep" textFill="#8d1111" />
+      <JFXButton fx:id="tat" layoutX="955.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fx:id="closes" fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>

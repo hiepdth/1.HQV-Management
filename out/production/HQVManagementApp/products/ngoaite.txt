@@ -1,1 +1,19 @@
-src/images/vangta/namphan.jpg:N�m ph�n
+﻿src/images/ngoaite/balan.jpg: Ba Lan
+src/images/ngoaite/balan.jpg: Ba Lan
+src/images/ngoaite/bang.jpg: Bảng (Anh)
+src/images/ngoaite/bat.jpg: Bạt (Thái)
+src/images/ngoaite/campuchia.jpg: CamPuChia
+src/images/ngoaite/canada.jpg: Canada
+src/images/ngoaite/dailoan.jpg: Đài Loan
+src/images/ngoaite/euro.jpg: Euro
+src/images/ngoaite/indonesia.jpg: Indonesia
+src/images/ngoaite/lao.jpg: Lào
+src/images/ngoaite/philipin.jpg: Philippin
+src/images/ngoaite/rub.jpg: Rub (Nga)
+src/images/ngoaite/singapore.jpg: Singapore
+src/images/ngoaite/te.jpg: Tệ (Trung)
+src/images/ngoaite/uc.jpg: Úc
+src/images/ngoaite/usd.jpg: Đô (Mỹ)
+src/images/ngoaite/vietnam.jpg: VNĐ
+src/images/ngoaite/won.jpg: Won (Hàn)
+src/images/ngoaite/yen.jpg: Yên (Nhật)

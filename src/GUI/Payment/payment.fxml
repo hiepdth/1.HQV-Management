@@ -54,16 +54,62 @@
                   </ImageView>
                </graphic>
             </JFXButton>
+            <Label alignment="CENTER" layoutX="185.0" layoutY="25.0" prefHeight="70.0" prefWidth="442.0" text="TRANG SỨC VÀNG BẠC ĐÁ QUÝ KIM DUNG" textFill="#e4c720">
+               <font>
+                  <Font name="HLT FoglihtenNo04" size="22.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #f48326;">
+      <JFXButton fx:id="ban" layoutX="986.0" layoutY="135.0" onAction="#handleAction" prefHeight="40.0" prefWidth="82.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em; -fx-background-color: #31bb4d;" text="BÁN" textFill="#171717">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="mua" layoutX="857.0" layoutY="135.0" onAction="#handleAction" prefHeight="40.0" prefWidth="82.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em;" text="MUA" textFill="#171717">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="gold" layoutX="113.0" layoutY="135.0" onAction="#handleAction" prefHeight="40.0" prefWidth="82.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em; -fx-background-color: #a7148a;" text="GOLD" textFill="#edf509">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="other" layoutX="369.0" layoutY="136.0" onAction="#handleAction" prefHeight="40.0" prefWidth="98.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em;" text="OTHER" textFill="#edf509">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cur" layoutX="223.0" layoutY="135.0" onAction="#handleAction" prefHeight="40.0" prefWidth="126.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em;" text="CURRENCY" textFill="#edf509">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="31.0" layoutY="147.0" prefHeight="17.0" prefWidth="71.0" text="Sản phẩm:" />
+      <AnchorPane fx:id="vangPane" layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #f48326;">
          <children>
             <Label layoutX="42.0" layoutY="33.0" text="Tên khách hàng:">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <JFXTextField alignment="CENTER" layoutX="208.0" layoutY="22.0" prefHeight="25.0" prefWidth="185.0" promptText="Đinh Thế Hiệp">
+            <JFXTextField fx:id="KhachHang" alignment="CENTER" layoutX="208.0" layoutY="22.0" prefHeight="25.0" prefWidth="185.0">
                <font>
                   <Font name="HLT Jojo" size="18.0" />
                </font></JFXTextField>
@@ -72,71 +118,63 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <JFXTextField layoutX="601.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
-            <JFXTextField layoutX="672.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
-            <JFXTextField layoutX="750.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="dd" alignment="CENTER" layoutX="601.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="mm" alignment="CENTER" layoutX="672.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="yyyy" alignment="CENTER" layoutX="750.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
             <Label layoutX="655.0" layoutY="46.0" text="/" />
             <Label layoutX="727.0" layoutY="46.0" text="/" />
             <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="47.0" prefWidth="1144.0">
                <children>
                   <HBox prefHeight="47.0" prefWidth="1163.0">
                      <children>
-                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="252.0" style="-fx-border-color: black;" text="Tên sản phẩm" />
-                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="98.0" style="-fx-border-color: black;" text="Loại sản phẩm" />
-                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="125.0" style="-fx-border-color: black;" text="Đơn giá" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="245.0" style="-fx-border-color: black;" text="Tên sản phẩm" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="95.0" style="-fx-border-color: black;" text="Loại" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="125.0" style="-fx-border-color: black;" text="Số lượng" />
                         <Label alignment="CENTER" prefHeight="47.0" prefWidth="156.0" style="-fx-border-color: black;" text="Khối lượng (Tổng)" />
-                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="124.0" style="-fx-border-color: black;" text="Khối lượng (đá)" />
-                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="131.0" style="-fx-border-color: black;" text="Phần trăm vàng" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="124.0" style="-fx-border-color: black;" text="Đơn giá" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="131.0" style="-fx-border-color: black;" text="Phần trăm nhập" />
                         <Label alignment="CENTER" prefHeight="47.0" prefWidth="128.0" style="-fx-border-color: black;" text="Gia công" />
                         <Label alignment="CENTER" prefHeight="47.0" prefWidth="174.0" style="-fx-border-color: black;" text="Tổng số tiền" />
                      </children>
                   </HBox>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="20.0" layoutY="141.0" prefHeight="40.0" prefWidth="1163.0">
+            <AnchorPane layoutX="20.0" layoutY="190.0" prefHeight="40.0" prefWidth="1163.0">
                <children>
                   <HBox prefHeight="40.0" prefWidth="1163.0" spacing="10.0">
                      <children>
-                        <JFXTextField prefHeight="40.0" prefWidth="255.0" />
-                        <JFXTextField prefHeight="70.0" prefWidth="98.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="125.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="156.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="124.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="131.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="128.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="174.0" />
-                     </children>
-                  </HBox>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="20.0" layoutY="203.0" prefHeight="40.0" prefWidth="1163.0">
-               <children>
-                  <HBox prefHeight="40.0" prefWidth="1163.0" spacing="10.0">
-                     <children>
-                        <JFXTextField prefHeight="40.0" prefWidth="255.0" />
-                        <JFXTextField prefHeight="70.0" prefWidth="98.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="125.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="156.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="124.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="131.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="128.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="174.0" />
-                     </children>
-                  </HBox>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="20.0" layoutY="268.0" prefHeight="40.0" prefWidth="1163.0">
-               <children>
-                  <HBox prefHeight="40.0" prefWidth="1163.0" spacing="10.0">
-                     <children>
-                        <JFXTextField prefHeight="40.0" prefWidth="255.0" />
-                        <JFXTextField prefHeight="70.0" prefWidth="98.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="125.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="156.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="124.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="131.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="128.0" />
-                        <JFXTextField alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="174.0" />
+                        <JFXTextField fx:id="TenSp" alignment="CENTER" prefHeight="40.0" prefWidth="255.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="Type" alignment="CENTER" prefHeight="70.0" prefWidth="98.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="SoLuong" alignment="CENTER" prefHeight="70.0" prefWidth="125.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="KhoiLuong" alignment="CENTER" prefHeight="70.0" prefWidth="156.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="DonGia" alignment="CENTER" prefHeight="40.0" prefWidth="135.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="NhapLai" alignment="CENTER" prefHeight="70.0" prefWidth="131.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="GiaCong" alignment="CENTER" prefHeight="70.0" prefWidth="128.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="TongTien" alignment="CENTER" prefHeight="70.0" prefWidth="174.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXTextField>
                      </children>
                   </HBox>
                </children>
@@ -146,20 +184,26 @@
                   <Font name="System Bold Italic" size="25.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="1033.0" layoutY="362.0" prefHeight="66.0" prefWidth="145.0" style="-fx-border-color: black;" text="100000">
+            <Label fx:id="Tong" alignment="CENTER" layoutX="1033.0" layoutY="362.0" prefHeight="66.0" prefWidth="145.0" style="-fx-border-color: black;">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-75.0" />
-            <Label layoutX="68.0" layoutY="351.0" text="Hình thức thanh toán:">
+            <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-200.0" />
+            <Label layoutX="36.0" layoutY="353.0" text="Hình thức thanh toán:">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <JFXToggleButton layoutX="300.0" layoutY="410.0" prefHeight="47.0" prefWidth="122.0" text="Quẹt Thẻ" />
-            <JFXToggleButton layoutX="300.0" layoutY="339.0" prefHeight="40.0" prefWidth="122.0" text="Tiền mặt" toggleLineColor="#20d66a" />
-            <JFXButton layoutX="331.0" layoutY="476.0" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#170914">
+            <JFXToggleButton fx:id="Card" layoutX="276.0" layoutY="393.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXToggleButton>
+            <JFXToggleButton fx:id="TienMat" layoutX="280.0" layoutY="327.0" prefHeight="60.0" prefWidth="144.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXToggleButton>
+            <JFXButton fx:id="thanhtoan" layoutX="331.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#dd8a42">
                <font>
                   <Font size="30.0" />
                </font>
@@ -172,9 +216,9 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <JFXTextField layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
-            <JFXTextField layoutX="1069.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
-            <Label layoutX="1063.0" layoutY="45.0" text="/" />
+            <JFXTextField fx:id="hour" alignment="CENTER" layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
+            <JFXTextField fx:id="minute" alignment="CENTER" layoutX="1054.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
+            <Label layoutX="1043.0" layoutY="43.0" text=":" />
             <JFXButton fx:id="cancel" layoutX="614.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -185,21 +229,245 @@
             </JFXButton>
          </children>
       </AnchorPane>
-      <JFXButton layoutX="986.0" layoutY="135.0" prefHeight="40.0" prefWidth="82.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em; -fx-background-color: #31bb4d;" text="BÁN" textFill="#171717">
-         <font>
-            <Font name="Bauhaus 93" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
-      <JFXButton layoutX="857.0" layoutY="135.0" prefHeight="40.0" prefWidth="82.0" style="-fx-border-radius: 2em; -fx-background-radius: 2em; -fx-background-color: #31bb4d;" text="MUA" textFill="#171717">
-         <font>
-            <Font name="Bauhaus 93" size="20.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
+      <AnchorPane fx:id="ngoaitePane" layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #a1498f;" visible="false">
+         <children>
+            <Label layoutX="42.0" layoutY="33.0" text="Tên khách hàng:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="KhachHang1" alignment="CENTER" layoutX="208.0" layoutY="22.0" prefHeight="25.0" prefWidth="185.0">
+               <font>
+                  <Font name="HLT Jojo" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="534.0" layoutY="41.0" text="Ngày:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="dd1" alignment="CENTER" layoutX="601.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="mm1" alignment="CENTER" layoutX="672.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="yyyy1" alignment="CENTER" layoutX="750.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <Label layoutX="655.0" layoutY="46.0" text="/" />
+            <Label layoutX="727.0" layoutY="46.0" text="/" />
+            <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="47.0" prefWidth="1144.0">
+               <children>
+                  <HBox prefHeight="47.0" prefWidth="1163.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="319.0" style="-fx-border-color: black;" text="Loại Tiền Tệ" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="319.0" style="-fx-border-color: black;" text="Số lượng" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="308.0" style="-fx-border-color: black;" text="Đơn giá" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="273.0" style="-fx-border-color: black;" text="Phụ phí" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="264.0" style="-fx-border-color: black;" text="Tổng số tiền" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="190.0" prefHeight="40.0" prefWidth="1163.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="1163.0" spacing="10.0">
+                     <children>
+                        <JFXTextField fx:id="LoaiTien" alignment="CENTER" prefHeight="44.0" prefWidth="292.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="SoLuong1" alignment="CENTER" prefHeight="44.0" prefWidth="295.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="DonGia1" alignment="CENTER" prefHeight="44.0" prefWidth="262.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="PhuPhi" alignment="CENTER" prefHeight="44.0" prefWidth="236.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="TongTien1" alignment="CENTER" prefHeight="44.0" prefWidth="241.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label layoutX="911.0" layoutY="368.0" prefHeight="47.0" prefWidth="98.0" text="TỔNG:">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="Tong1" alignment="CENTER" layoutX="1033.0" layoutY="362.0" prefHeight="66.0" prefWidth="145.0" style="-fx-border-color: black;">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-200.0" />
+            <Label layoutX="36.0" layoutY="353.0" text="Hình thức thanh toán:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="Card1" layoutX="276.0" layoutY="393.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXToggleButton fx:id="TienMat1" layoutX="280.0" layoutY="327.0" prefHeight="60.0" prefWidth="144.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXButton fx:id="thanhtoan1" layoutX="331.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#25a1a7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="929.0" layoutY="41.0" text="Thời gian:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="hour1" alignment="CENTER" layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
+            <JFXTextField fx:id="minute1" alignment="CENTER" layoutX="1054.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
+            <Label layoutX="1043.0" layoutY="43.0" text=":" />
+            <JFXButton fx:id="cancel1" layoutX="614.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="otherPane" layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #25a1a7;" visible="false">
+         <children>
+            <Label layoutX="42.0" layoutY="33.0" text="Tên khách hàng:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="KhachHang2" alignment="CENTER" layoutX="208.0" layoutY="22.0" prefHeight="25.0" prefWidth="185.0">
+               <font>
+                  <Font name="HLT Jojo" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="534.0" layoutY="41.0" text="Ngày:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="dd2" alignment="CENTER" layoutX="601.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="mm2" alignment="CENTER" layoutX="672.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <JFXTextField fx:id="yyyy2" alignment="CENTER" layoutX="750.0" layoutY="33.0" prefHeight="25.0" prefWidth="47.0" />
+            <Label layoutX="655.0" layoutY="46.0" text="/" />
+            <Label layoutX="727.0" layoutY="46.0" text="/" />
+            <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="47.0" prefWidth="1144.0">
+               <children>
+                  <HBox prefHeight="47.0" prefWidth="1163.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="319.0" style="-fx-border-color: black;" text="Tên sản phẩm" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="319.0" style="-fx-border-color: black;" text="Số lượng" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="308.0" style="-fx-border-color: black;" text="Đơn giá" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="273.0" style="-fx-border-color: black;" text="Phụ phí" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="264.0" style="-fx-border-color: black;" text="Tổng số tiền" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="190.0" prefHeight="40.0" prefWidth="1163.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="1163.0" spacing="10.0">
+                     <children>
+                        <JFXTextField fx:id="Ten" alignment="CENTER" prefHeight="44.0" prefWidth="292.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="SoLuong2" alignment="CENTER" prefHeight="44.0" prefWidth="295.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="DonGia2" alignment="CENTER" prefHeight="44.0" prefWidth="262.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="PhuPhi2" alignment="CENTER" prefHeight="44.0" prefWidth="236.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="TongTien2" alignment="CENTER" prefHeight="44.0" prefWidth="241.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label layoutX="911.0" layoutY="368.0" prefHeight="47.0" prefWidth="98.0" text="TỔNG:">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="Tong2" alignment="CENTER" layoutX="1033.0" layoutY="362.0" prefHeight="66.0" prefWidth="145.0" style="-fx-border-color: black;">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-200.0" />
+            <Label layoutX="36.0" layoutY="353.0" text="Hình thức thanh toán:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="Card2" layoutX="276.0" layoutY="393.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXToggleButton fx:id="TienMat2" layoutX="280.0" layoutY="327.0" prefHeight="60.0" prefWidth="144.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXButton fx:id="thanhtoan2" layoutX="331.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#a1498f">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="929.0" layoutY="41.0" text="Thời gian:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="hour2" alignment="CENTER" layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
+            <JFXTextField fx:id="minute2" alignment="CENTER" layoutX="1054.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
+            <Label layoutX="1043.0" layoutY="43.0" text=":" />
+            <JFXButton fx:id="cancel2" layoutX="614.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

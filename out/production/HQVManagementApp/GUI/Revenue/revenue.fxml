@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Revenue.ManagementRevenue">
+   <children>
+      <AnchorPane prefHeight="112.0" prefWidth="1200.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="101.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="875.0" layoutY="24.0" prefHeight="56.0" prefWidth="154.0" style="-fx-border-color: #29752c; -fx-border-radius: 0.5em;" stylesheets="@../../style.css" text="KHO" textFill="#c23341">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Button layoutX="1078.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+            <JFXButton fx:id="close" layoutX="1155.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../style.css" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="minimize" layoutX="1105.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../style.css" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/minimize.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="171.0" layoutY="15.0" prefHeight="70.0" prefWidth="442.0" text="TRANG SỨC VÀNG BẠC ĐÁ QUÝ KIM DUNG" textFill="#e4c720">
+               <font>
+                  <Font name="HLT FoglihtenNo04" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="138.0" prefHeight="662.0" prefWidth="1200.0" style="-fx-background-color: #c23341;">
+         <children>
+            <Label alignment="CENTER" layoutX="897.0" layoutY="25.0" prefHeight="42.0" prefWidth="119.0" style="-fx-border-color: yellow;" text="NGOẠI TỆ" textFill="#06bbe4">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="182.0" layoutY="25.0" prefHeight="42.0" prefWidth="119.0" style="-fx-border-color: yellow;" text="VÀNG" textFill="#06bbe4">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Nhẫn" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nhanta" alignment="CENTER" layoutX="119.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="46" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="kiengta" alignment="CENTER" layoutX="119.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="5" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Kiềng" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="taita" alignment="CENTER" layoutX="119.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="11" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Tai" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="matta" alignment="CENTER" layoutX="119.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="15" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Mặt" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dayta" alignment="CENTER" layoutX="119.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="22" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Dây" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lacta" alignment="CENTER" layoutX="119.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="8" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Lắc" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="vongxi" alignment="CENTER" layoutX="119.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="11" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Vòng xi" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nhannam" alignment="CENTER" layoutX="362.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Nhẫn nam" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nhannu" alignment="CENTER" layoutX="362.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Nhẫn nữ" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nhancuoi" alignment="CENTER" layoutX="362.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Nhẫn cưới" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="326.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Lắc" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lactay" alignment="CENTER" layoutX="362.0" layoutY="326.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="297.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Dây" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="daytay" alignment="CENTER" layoutX="362.0" layoutY="297.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Mặt" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="mattay" alignment="CENTER" layoutX="362.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Tai" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="taitay" alignment="CENTER" layoutX="362.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Kiềng" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="kiengtay" alignment="CENTER" layoutX="362.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bo" alignment="CENTER" layoutX="362.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Bộ" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="TongVangta" alignment="CENTER" layoutX="119.0" layoutY="297.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="118" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="297.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Tổng:" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="TongVangtay" alignment="CENTER" layoutX="362.0" layoutY="356.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="46" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="356.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Tổng:" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="419.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="DOJI" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="doji" alignment="CENTER" layoutX="119.0" layoutY="419.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="0" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="390.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="SJC" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="sjc" alignment="CENTER" layoutX="119.0" layoutY="390.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="2" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="361.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="BTMC" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="btmc" alignment="CENTER" layoutX="119.0" layoutY="361.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="128" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Sing" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="sing" alignment="CENTER" layoutX="818.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="te" alignment="CENTER" layoutX="818.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Tệ (Trung" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="euro" alignment="CENTER" layoutX="818.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Euro" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="uc" alignment="CENTER" layoutX="818.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Úc" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="canada" alignment="CENTER" layoutX="1084.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Canada" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="won" alignment="CENTER" layoutX="1084.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Won (Hàn)" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dailoan" alignment="CENTER" layoutX="1084.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Đài Loan" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bang" alignment="CENTER" layoutX="1084.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="181.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Bảng (Anh)" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="rub" alignment="CENTER" layoutX="1084.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="210.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Rub (Nga)" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="thuysi" alignment="CENTER" layoutX="1084.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="239.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Thụy sĩ" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Bạt (Thái)" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bat" alignment="CENTER" layoutX="818.0" layoutY="152.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Yên (Nhật)" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="yen" alignment="CENTER" layoutX="818.0" layoutY="123.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Đô (Mỹ)" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="usd" alignment="CENTER" layoutX="818.0" layoutY="94.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="997.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Lào" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lao" alignment="CENTER" layoutX="1084.0" layoutY="268.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="406.0" layoutY="495.0" prefHeight="112.0" prefWidth="180.0" text="TIỀN" textFill="#13d199">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="Tien" alignment="CENTER" contentDisplay="CENTER" layoutX="634.0" layoutY="495.0" prefHeight="112.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 2em; -fx-background-color: #1dbf40; -fx-background-radius: 2em;" text="249.642.000" textFill="#171717">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="731.0" layoutY="297.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" text="Malaysia" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="malaysia" alignment="CENTER" layoutX="818.0" layoutY="297.0" prefHeight="29.0" prefWidth="87.0" style="-fx-border-color: black;" textFill="#e4ba13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

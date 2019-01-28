@@ -5,7 +5,7 @@ import java.util.Date;
 public class Gold extends Production {
     protected Date date;          //Thời gian bán hoặc mua sản phẩm
     protected String name;        //tên sản phẩm
-    protected String type;        //loại sản phẩm (kiềng, lắc tay, nhẫn, ...)
+    protected String type;        //loại sản phẩm (bao nhiêu K, 24K, 18,...)
     protected double weight;      //Khối lượng sản phẩm
     protected double otherweight; //Khối lượng khác ( đá, ...)
     protected int price;          //Đơn giá

@@ -3,33 +3,30 @@
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.image.*?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="hisPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.History.ManagementHistory">
+<AnchorPane fx:id="hisPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.History.ManagementHistory">
    <children>
-      <AnchorPane prefHeight="100.0" prefWidth="1100.0" style="-fx-background-color: #3d4956;">
+      <AnchorPane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #3d4956;">
          <children>
             <ImageView fitHeight="75.0" fitWidth="101.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/avatar.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="835.0" layoutY="24.0" prefHeight="56.0" prefWidth="121.0" style="-fx-border-color: #29752c; -fx-border-radius: 0.5em;" stylesheets="@../../style.css" text="HISTORY" textFill="#29752c">
+            <JFXButton layoutX="914.0" layoutY="22.0" prefHeight="56.0" prefWidth="121.0" style="-fx-border-color: #29752c; -fx-border-radius: 0.5em;" stylesheets="@../../style.css" text="HISTORY" textFill="#29752c">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="21.0" />
                </font>
             </JFXButton>
             <Button layoutX="1078.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
-            <JFXButton fx:id="close" layoutX="1056.0" layoutY="-1.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../style.css" text=" ">
+            <JFXButton fx:id="close" layoutX="1155.0" layoutY="1.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../style.css" text=" ">
                <graphic>
                   <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -41,7 +38,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="minimize" layoutX="1006.0" layoutY="-1.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../style.css" text=" ">
+            <JFXButton fx:id="minimize" layoutX="1105.0" layoutY="1.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../style.css" text=" ">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -53,13 +50,18 @@
                   </ImageView>
                </graphic>
             </JFXButton>
+            <Label alignment="CENTER" layoutX="171.0" layoutY="15.0" prefHeight="70.0" prefWidth="442.0" text="TRANG SỨC VÀNG BẠC ĐÁ QUÝ KIM DUNG" textFill="#e4c720">
+               <font>
+                  <Font name="HLT FoglihtenNo04" size="22.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <AnchorPane layoutY="107.0" prefHeight="693.0" prefWidth="169.0" style="-fx-background-color: #3d4956;">
          <children>
             <VBox prefHeight="693.0" prefWidth="169.0">
                <children>
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="VÀNG TA" textFill="#f5e7e7">
+                  <JFXButton fx:id="vang" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="VÀNG" textFill="#f5e7e7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -77,25 +79,7 @@
                         <Insets left="30.0" />
                      </padding>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="VÀNG TÂY" textFill="#f5e7e7">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <font>
-                        <Font name="Bookshelf Symbol 7" size="13.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../images/vangtay.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="30.0" />
-                     </padding>
-                  </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="25.0" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="NGOẠI TỆ" textFill="#f5e7e7">
+                  <JFXButton fx:id="ngoaite" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="NGOẠI TỆ" textFill="#f5e7e7">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -113,17 +97,52 @@
                         <Insets left="30.0" />
                      </padding>
                   </JFXButton>
+                  <JFXButton fx:id="other" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="KHÁC" textFill="#f5e7e7">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/other.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </JFXButton>
                </children>
             </VBox>
          </children>
       </AnchorPane>
-      <JFXTextField layoutX="814.0" layoutY="145.0" prefHeight="25.0" prefWidth="178.0" />
-      <JFXListView layoutX="181.0" layoutY="189.0" prefHeight="605.0" prefWidth="914.0" />
       <Label layoutX="187.0" layoutY="141.0" prefHeight="33.0" prefWidth="220.0" text="LỊCH SỬ GIAO DỊCH:">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="708.0" layoutY="158.0" text="Tìm kiếm nhanh" />
+      <ScrollPane fx:id="muaScPane" hbarPolicy="NEVER" layoutX="187.0" layoutY="200.0" prefHeight="254.0" prefWidth="1000.0" vbarPolicy="NEVER">
+         <content>
+            <FlowPane fx:id="muaFlPane" prefHeight="254.0" prefWidth="1000.0" style="-fx-background-color: #496689;" vgap="20.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="banScPane" hbarPolicy="NEVER" layoutX="187.0" layoutY="521.0" prefHeight="254.0" prefWidth="1000.0" vbarPolicy="NEVER">
+         <content>
+            <FlowPane fx:id="banFlPane" prefHeight="254.0" prefWidth="1000.0" style="-fx-background-color: #496689;" vgap="20.0" />
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="652.0" layoutY="160.0" prefHeight="29.0" prefWidth="121.0" text="MUA">
+         <font>
+            <Font name="Leelawadee UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="652.0" layoutY="469.0" prefHeight="29.0" prefWidth="121.0" text="BÁN">
+         <font>
+            <Font name="Leelawadee UI Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
