@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="payPane" prefHeight="776.0" prefWidth="1200.0" style="-fx-background-radius: 2em;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Payment.ManagementPayment">
+<AnchorPane fx:id="payPane" prefHeight="824.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Payment.ManagementPayment">
    <children>
       <AnchorPane prefHeight="120.0" prefWidth="1200.0" style="-fx-background-color: #3d4956;">
          <children>
@@ -102,7 +102,7 @@
          </font>
       </JFXButton>
       <Label layoutX="31.0" layoutY="147.0" prefHeight="17.0" prefWidth="71.0" text="Sản phẩm:" />
-      <AnchorPane fx:id="vangPane" layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #f48326;">
+      <AnchorPane fx:id="vangPane" layoutY="188.0" prefHeight="635.0" prefWidth="1200.0" style="-fx-background-color: #f48326;">
          <children>
             <Label layoutX="42.0" layoutY="33.0" text="Tên khách hàng:">
                <font>
@@ -190,20 +190,20 @@
                </font>
             </Label>
             <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-200.0" />
-            <Label layoutX="36.0" layoutY="353.0" text="Hình thức thanh toán:">
+            <Label layoutX="40.0" layoutY="400.0" text="Hình thức thanh toán:">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <JFXToggleButton fx:id="Card" layoutX="276.0" layoutY="393.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
+            <JFXToggleButton fx:id="Card" layoutX="280.0" layoutY="443.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
                <font>
                   <Font size="15.0" />
                </font></JFXToggleButton>
-            <JFXToggleButton fx:id="TienMat" layoutX="280.0" layoutY="327.0" prefHeight="60.0" prefWidth="144.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
+            <JFXToggleButton fx:id="TienMat" layoutX="280.0" layoutY="380.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
                <font>
                   <Font size="15.0" />
                </font></JFXToggleButton>
-            <JFXButton fx:id="thanhtoan" layoutX="331.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#dd8a42">
+            <JFXButton fx:id="thanhtoan" layoutX="330.0" layoutY="521.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#dd8a42">
                <font>
                   <Font size="30.0" />
                </font>
@@ -219,7 +219,7 @@
             <JFXTextField fx:id="hour" alignment="CENTER" layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
             <JFXTextField fx:id="minute" alignment="CENTER" layoutX="1054.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
             <Label layoutX="1043.0" layoutY="43.0" text=":" />
-            <JFXButton fx:id="cancel" layoutX="614.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
+            <JFXButton fx:id="cancel" layoutX="617.0" layoutY="521.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -227,9 +227,19 @@
                   <Font size="30.0" />
                </font>
             </JFXButton>
+            <Label layoutX="53.0" layoutY="292.0" text="GHI CHÚ:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="note" layoutX="133.0" layoutY="276.0" prefHeight="98.0" prefWidth="301.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="ngoaitePane" layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #a1498f;" visible="false">
+      <AnchorPane fx:id="ngoaitePane" layoutY="188.0" prefHeight="635.0" prefWidth="1200.0" style="-fx-background-color: #a1498f;" visible="false">
          <children>
             <Label layoutX="42.0" layoutY="33.0" text="Tên khách hàng:">
                <font>
@@ -308,22 +318,22 @@
                </font>
             </Label>
             <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-200.0" />
-            <Label layoutX="36.0" layoutY="353.0" text="Hình thức thanh toán:">
+            <Label layoutX="40.0" layoutY="400.0" text="Hình thức thanh toán:">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <JFXToggleButton fx:id="Card1" layoutX="276.0" layoutY="393.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
+            <JFXToggleButton fx:id="Card1" layoutX="280.0" layoutY="443.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXToggleButton>
-            <JFXToggleButton fx:id="TienMat1" layoutX="280.0" layoutY="327.0" prefHeight="60.0" prefWidth="144.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
+            <JFXToggleButton fx:id="TienMat1" layoutX="280.0" layoutY="380.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXToggleButton>
-            <JFXButton fx:id="thanhtoan1" layoutX="331.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#25a1a7">
+            <JFXButton fx:id="thanhtoan1" layoutX="330.0" layoutY="521.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#25a1a7">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -339,7 +349,7 @@
             <JFXTextField fx:id="hour1" alignment="CENTER" layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
             <JFXTextField fx:id="minute1" alignment="CENTER" layoutX="1054.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
             <Label layoutX="1043.0" layoutY="43.0" text=":" />
-            <JFXButton fx:id="cancel1" layoutX="614.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
+            <JFXButton fx:id="cancel1" layoutX="617.0" layoutY="521.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -347,9 +357,19 @@
                   <Font size="30.0" />
                </font>
             </JFXButton>
+            <TextArea fx:id="note1" layoutX="133.0" layoutY="276.0" prefHeight="98.0" prefWidth="301.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="53.0" layoutY="292.0" text="GHI CHÚ:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="otherPane" layoutY="188.0" prefHeight="588.0" prefWidth="1200.0" style="-fx-background-color: #25a1a7;" visible="false">
+      <AnchorPane fx:id="otherPane" layoutY="188.0" prefHeight="635.0" prefWidth="1200.0" style="-fx-background-color: #25a1a7;" visible="false">
          <children>
             <Label layoutX="42.0" layoutY="33.0" text="Tên khách hàng:">
                <font>
@@ -428,22 +448,22 @@
                </font>
             </Label>
             <Line endX="90.0" layoutX="1099.0" layoutY="346.0" startX="-200.0" />
-            <Label layoutX="36.0" layoutY="353.0" text="Hình thức thanh toán:">
+            <Label layoutX="40.0" layoutY="400.0" text="Hình thức thanh toán:">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <JFXToggleButton fx:id="Card2" layoutX="276.0" layoutY="393.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
+            <JFXToggleButton fx:id="Card2" layoutX="280.0" layoutY="443.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Quẹt Thẻ">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXToggleButton>
-            <JFXToggleButton fx:id="TienMat2" layoutX="280.0" layoutY="327.0" prefHeight="60.0" prefWidth="144.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
+            <JFXToggleButton fx:id="TienMat2" layoutX="280.0" layoutY="380.0" prefHeight="47.0" prefWidth="153.0" size="12.0" text="Tiền mặt" toggleLineColor="#20d66a">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXToggleButton>
-            <JFXButton fx:id="thanhtoan2" layoutX="331.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#a1498f">
+            <JFXButton fx:id="thanhtoan2" layoutX="330.0" layoutY="521.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #31bb4d;" stylesheets="@../../style.css" text="THANH TOÁN" textFill="#a1498f">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -459,7 +479,7 @@
             <JFXTextField fx:id="hour2" alignment="CENTER" layoutX="1010.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
             <JFXTextField fx:id="minute2" alignment="CENTER" layoutX="1054.0" layoutY="33.0" prefHeight="25.0" prefWidth="26.0" />
             <Label layoutX="1043.0" layoutY="43.0" text=":" />
-            <JFXButton fx:id="cancel2" layoutX="614.0" layoutY="476.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
+            <JFXButton fx:id="cancel2" layoutX="617.0" layoutY="521.0" onAction="#handleAction" prefHeight="89.0" prefWidth="231.0" style="-fx-background-color: #d32c34;" stylesheets="@../../style.css" text="HỦY" textFill="#bfabac">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -467,6 +487,16 @@
                   <Font size="30.0" />
                </font>
             </JFXButton>
+            <Label layoutX="53.0" layoutY="292.0" text="GHI CHÚ:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="note2" layoutX="133.0" layoutY="276.0" prefHeight="98.0" prefWidth="301.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
          </children>
       </AnchorPane>
    </children>

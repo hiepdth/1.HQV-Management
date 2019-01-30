@@ -4,6 +4,7 @@ import BackEnd.Currency;
 import BackEnd.Management;
 import BackEnd.Vangta;
 import BackEnd.Vangtay;
+import GUI.Payment.ManagementPayment;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -36,11 +37,19 @@ public class ManagementFrame {
 
     NewWin win = new NewWin();
 
+    ManagementPayment pay = new ManagementPayment();
+
     @FXML
     private void handleAction(ActionEvent event) {   //todo: Hàm bắt xử kiện (Gộp chung) cho từng button
         //todo: Quay trở về trang chủ
         if (event.getTarget() == home) {
-
+            try {
+                win.makeWindow(new Stage(), "/GUI/Dashboard/dashboard.fxml");
+                Stage stage = (Stage) home.getScene().getWindow();
+                stage.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         //todo: HIện thị cửa sổ vàng ta
         else if (event.getTarget() == vangta) {
@@ -168,6 +177,7 @@ public class ManagementFrame {
                 public void handle(ActionEvent event) {
                     try {
                         win.makeWindow(new Stage(), "/GUI/Payment/payment.fxml");
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

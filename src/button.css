@@ -1,12 +1,11 @@
-.pane
+.button
 {
--fx-background-color :  #d65764;
 -fx-text-fill : #f5e7e7;
 }
-.pane:hover{
--fx-background-color : #901e1e;
+.button:hover{
+-fx-background-color : #cc664f;
 }
-.pane:pressed
+.button:pressed
 {
 -fx-background-color : transparent;
 }

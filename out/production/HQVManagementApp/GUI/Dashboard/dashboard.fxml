@@ -1,14 +1,467 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="GUI.Dashboard.ManagementDashboard"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="test" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: #510a32;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Dashboard.ManagementDashboard">
+   <children>
+      <AnchorPane layoutX="1200.0" layoutY="105.0" prefHeight="803.0" prefWidth="300.0" style="-fx-background-color: #801336;">
+         <children>
+            <VBox prefHeight="804.0" prefWidth="300.0">
+               <children>
+                  <AnchorPane prefHeight="161.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/hiep.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="100.0" layoutY="126.0" text="ĐINH THẾ HIỆP" textFill="#e8dede">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="693.0" prefWidth="300.0" vbarPolicy="NEVER">
+                     <content>
+                        <FlowPane prefHeight="602.0" prefWidth="299.0" style="-fx-background-color: #801336;">
+                           <children>
+                              <AnchorPane prefHeight="60.0" prefWidth="297.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="12.5" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/yen.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="104.0" layoutY="16.0" prefHeight="27.0" prefWidth="89.0" text="Cửa hàng 1" textFill="#dad3d3" />
+                                    <Circle fill="#08ee3a" layoutX="267.0" layoutY="30.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="60.0" prefWidth="298.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="12.5" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/per1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="105.0" layoutY="17.0" prefHeight="27.0" prefWidth="89.0" text="Cửa hàng 2" textFill="#dad3d3" />
+                                    <Circle fill="#08ee3a" layoutX="266.0" layoutY="30.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="60.0" prefWidth="298.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="12.5" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/per2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="105.0" layoutY="17.0" prefHeight="27.0" prefWidth="89.0" text="Cửa hàng 3" textFill="#dad3d3" />
+                                    <Circle fill="#08ee3a" layoutX="266.0" layoutY="30.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="60.0" prefWidth="298.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="12.5" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/male.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="105.0" layoutY="17.0" prefHeight="27.0" prefWidth="89.0" text="Cửa hàng 4" textFill="#dad3d3" />
+                                    <Circle fill="#08ee3a" layoutX="266.0" layoutY="30.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+                  <AnchorPane prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="5.0" prefHeight="40.0" prefWidth="29.0" stylesheets="@../../button.css" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" layoutX="129.0" layoutY="5.0" prefHeight="40.0" prefWidth="29.0" stylesheets="@../../button.css" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" layoutX="232.0" layoutY="3.0" prefHeight="40.0" prefWidth="29.0" stylesheets="@../../button.css" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/delete.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane prefHeight="87.0" prefWidth="1500.0" style="-fx-background-color: #801336;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="100.0" layoutX="38.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/avatar.png" />
+               </image>
+            </ImageView>
+            <JFXButton contentDisplay="RIGHT" layoutX="1234.0" layoutY="24.0" prefHeight="39.0" prefWidth="132.0" stylesheets="@../../button.css" text="ĐINH THẾ HIỆP" textFill="#cc664f">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/down.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="40.0" fitWidth="31.0" layoutX="1193.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/male.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton fx:id="minimize" contentDisplay="CENTER" layoutX="1413.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../button.css" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/minimize.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="close" contentDisplay="CENTER" layoutX="1463.0" onAction="#handleAction" prefHeight="29.0" prefWidth="17.0" stylesheets="@../../button.css" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect></AnchorPane>
+      <AnchorPane layoutX="23.0" layoutY="105.0" prefHeight="459.0" prefWidth="1170.0" style="-fx-background-color: #650a32;">
+         <children>
+            <AnchorPane prefHeight="80.0" prefWidth="1170.0">
+               <children>
+                  <JFXSpinner layoutX="68.0" layoutY="-3.0" prefHeight="79.0" prefWidth="85.0" />
+                  <JFXSpinner layoutX="86.0" layoutY="12.0" />
+                  <Line endX="1068.0" layoutX="101.0" layoutY="79.0" startX="-100.0" stroke="#e8e3e3" />
+                  <JFXButton contentDisplay="CENTER" layoutX="1087.0" layoutY="16.0" stylesheets="@../../button.css" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/lichsu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" layoutX="949.0" layoutY="16.0" stylesheets="@../../button.css" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/chart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" layoutX="1021.0" layoutY="16.0" stylesheets="@../../button.css" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/chartfill.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="RIGHT" layoutX="177.0" layoutY="17.0" stylesheets="@../../button.css" text="FILTER" textFill="#cc664f">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/down.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="RIGHT" layoutX="338.0" layoutY="17.0" stylesheets="@../../button.css" text="PRODUCT" textFill="#f5f2f2">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/down.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <Label alignment="TOP_LEFT" layoutX="719.0" layoutY="80.0" prefHeight="376.0" prefWidth="392.0" text="40% &#10;DOANH SỐ ĐẠT CHỈ TIÊUMUA BÁN &#10;TRONG THÁNG&#10;&#10;15% &#10;HÀNG TỒN KHO CHẬM THU CHI&#10;&#10;22,5%&#10;LƯỢNG NGOẠI TỆ MUA VÀO &#10;TĂNG&#10;&#10;10%&#10;DOANH THU TĂNG SO VỚI &#10;QUÝ TRƯỚC" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="326.0" fitWidth="520.0" layoutX="94.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/linechart.gif" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Pane fx:id="vangta" layoutX="23.0" layoutY="618.0" prefHeight="125.0" prefWidth="342.0" style="-fx-background-color: #650a32;" stylesheets="@../../pane.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="342.0" text="VÀNG TA" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="39.0" prefWidth="121.0" text="342 SẢN PHẨM" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="73.0" prefHeight="39.0" prefWidth="121.0" text="- 10 %" textFill="#da4146">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="243.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/vangta1.jpg" />
+               </image></ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Label layoutX="23.0" layoutY="579.0" prefHeight="39.0" prefWidth="218.0" text="DOANH THU VÀ SẢN PHẨM" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Pane fx:id="vangtay" layoutX="433.0" layoutY="618.0" prefHeight="125.0" prefWidth="342.0" style="-fx-background-color: #650a32;">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="342.0" text="VÀNG TÂY" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="39.0" prefWidth="121.0" text="564 SẢN PHẨM" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="73.0" prefHeight="39.0" prefWidth="121.0" text="+ 12,5 %" textFill="#0ec937">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="243.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/vangtay1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="ngoaite" layoutX="23.0" layoutY="774.0" prefHeight="125.0" prefWidth="342.0" style="-fx-background-color: #650a32;">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="342.0" text="NGOẠI TỆ" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="39.0" prefWidth="162.0" text="TRÊN 20 LOẠI TIỀN TỆ" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="243.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/ngoaite1.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="73.0" prefHeight="39.0" prefWidth="121.0" text="+ 5,99 %" textFill="#0ec937">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="lichsu" layoutX="433.0" layoutY="774.0" prefHeight="125.0" prefWidth="342.0" style="-fx-background-color: #650a32;">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="342.0" text="LỊCH SỬ GIAO DỊCH" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="39.0" prefWidth="146.0" text="1104 GIAO DỊCH" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="243.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/history.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="73.0" prefHeight="39.0" prefWidth="121.0" text="+ 5,38 %" textFill="#0ec937">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="thanhtoan" layoutX="842.0" layoutY="618.0" prefHeight="125.0" prefWidth="342.0" style="-fx-background-color: #650a32;">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="342.0" text="THANH TOÁN" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="39.0" prefWidth="168.0" text="85 THANH TOÁN LỚN" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="243.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/giaodich.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="78.0" prefHeight="39.0" prefWidth="121.0" text="- 3,21 %" textFill="#da4146">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="doanhthu" layoutX="842.0" layoutY="774.0" prefHeight="125.0" prefWidth="342.0" style="-fx-background-color: #650a32;">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="342.0" text="DOANH THU" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="39.0" prefWidth="162.0" text="VƯỢT MỨC CHỈ TIÊU" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="63.0" layoutX="243.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/doanhthu.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="73.0" prefHeight="39.0" prefWidth="121.0" text="+ 4,05 %" textFill="#0ec937">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
 </AnchorPane>

@@ -1,5 +1,6 @@
 package GUI.Payment;
 
+import BackEnd.Animation;
 import GUI.DatabaseProduct.DataPro;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
@@ -8,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.omg.PortableInterceptor.INACTIVE;
@@ -19,6 +21,9 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class ManagementPayment {
+
+    Animation notifi = new Animation();
+
     @FXML
     private JFXButton close, minimize, cancel, cancel1, cancel2;
     @FXML
@@ -45,18 +50,21 @@ public class ManagementPayment {
     //Các biến quản lí thanh toán sản phẩm Vàng
     @FXML private JFXButton thanhtoan;
     @FXML private JFXTextField KhachHang, TenSp, Type, DonGia, KhoiLuong, SoLuong, NhapLai, GiaCong, TongTien;
+    @FXML private TextArea note;
     @FXML private Label Tong;
 
 
     //Các biến quản lí thanh toán Ngoại tệ
     @FXML private JFXButton thanhtoan1;
     @FXML private JFXTextField KhachHang1, LoaiTien, SoLuong1, DonGia1, PhuPhi, TongTien1;
+    @FXML private TextArea note1;
     @FXML private Label Tong1;
     //Các biến quản lí thanh toán sản phẩm khác
 
 
     @FXML private JFXButton thanhtoan2;
     @FXML private JFXTextField KhachHang2, Ten, SoLuong2, DonGia2, PhuPhi2, TongTien2;
+    @FXML private TextArea note2;
     @FXML private Label Tong2;
 
 
@@ -121,6 +129,7 @@ public class ManagementPayment {
             String a14 = minute.getText();
             String muaorban;       //mua = 1, bán = 2;
             String thanhtoan = null;      //tiền mặt = 1, quẹt thẻ = 2;
+            String ghichu = note.getText();
             if(TienMat.isSelected()){
                 thanhtoan = "Tiền mặt";
             }
@@ -129,17 +138,27 @@ public class ManagementPayment {
             }
             else
                 thanhtoan = "Tiền mặt";
-            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+a12+":"+a13+":"+a14+":"+thanhtoan;
+            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+a12+":"+a13+":"+a14+":"+thanhtoan+":"+ghichu;
             if(mua.getStyle() == "-fx-background-color: #31bb4d")
                 saveHistory(his, "src\\history\\mua\\muaVang.txt");
             else
                 saveHistory(his, "src\\history\\ban\\banVang.txt");
-            /**
-             *
-             */
-
-            Stage stage = (Stage) close.getScene().getWindow();
-            stage.close();
+            notifi.done(vangPane, "Giao dịch thành công!!");
+            KhachHang.setText("");
+            TenSp.setText("");
+            Type.setText("");
+            DonGia.setText("");
+            KhoiLuong.setText("");
+            SoLuong.setText("");
+            NhapLai.setText("");
+            GiaCong.setText("");
+            note.setText("");
+            TongTien.setText("");
+            TienMat.setSelected(false);
+            Card.setSelected(false);
+            initialize();
+//            Stage stage = (Stage) close.getScene().getWindow();
+//            stage.close();
         }
         //TODO: Thanh toán cho sản phẩm ngoại tệ
         else if (event.getTarget() == thanhtoan1){
@@ -156,19 +175,31 @@ public class ManagementPayment {
             String a11 = minute1.getText();
             String muaorban;       //mua = 1, bán = 2;
             String thanhtoan = "";      //tiền mặt = 1, quẹt thẻ = 2;
+            String ghichu = note1.getText();
             if(TienMat1.isSelected())
                 thanhtoan = "Tiền mặt";
             else if(Card1.isSelected())
                 thanhtoan = "Card";
             else
                 thanhtoan = "Tiền mặt";
-            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan;
+            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan+":"+ghichu;
             if(mua.getStyle() == "-fx-background-color: #31bb4d")
                 saveHistory(his, "src\\history\\mua\\muaNgoaiTe.txt");
             else
                 saveHistory(his, "src\\history\\ban\\banNgoaiTe.txt");
-            Stage stage = (Stage) close.getScene().getWindow();
-            stage.close();
+            notifi.done(ngoaitePane, "Giao dịch thành công!!");
+            KhachHang1.setText("");
+            LoaiTien.setText("");
+            SoLuong1.setText("");
+            DonGia1.setText("");
+            PhuPhi.setText("");
+            TongTien1.setText("");
+            note1.setText("");
+            TienMat.setSelected(false);
+            Card.setSelected(false);
+            initialize();
+//            Stage stage = (Stage) close.getScene().getWindow();
+//            stage.close();
         }
 
         //TODO: Thanh toán cho sản phẩm khác
@@ -186,6 +217,7 @@ public class ManagementPayment {
             String a11 = minute2.getText();
             String muaorban;       //mua = 1, bán = 2;
             String thanhtoan = "";      //tiền mặt = 1, quẹt thẻ = 2;
+            String ghichu = note2.getText();
             if(TienMat2.isSelected())
                 thanhtoan = "Tiền mặt";
             else if(Card2.isSelected())
@@ -193,13 +225,25 @@ public class ManagementPayment {
             else
                 thanhtoan = "Tiền mặt";
 
-            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan;
+            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan+":"+ghichu;
             if(mua.getStyle() == "-fx-background-color: #31bb4d")
                 saveHistory(his, "src\\history\\mua\\muaKhac.txt");
             else
                 saveHistory(his, "src\\history\\ban\\banKhac.txt");
-            Stage stage = (Stage) close.getScene().getWindow();
-            stage.close();
+            notifi.done(otherPane, "Giao dịch thành công!!");
+
+            KhachHang2.setText("");
+            Ten.setText("");
+            SoLuong2.setText("");
+            DonGia2.setText("");
+            PhuPhi2.setText("");
+            TongTien2.setText("");
+            note2.setText("");
+            TienMat.setSelected(false);
+            Card.setSelected(false);
+            initialize();
+//            Stage stage = (Stage) close.getScene().getWindow();
+//            stage.close();
         }
 
     }
@@ -255,5 +299,17 @@ public class ManagementPayment {
         }
     }
 
+
+    public JFXTextField getTenSp() {
+        return TenSp;
+    }
+
+    public JFXTextField getLoaiTien() {
+        return LoaiTien;
+    }
+
+    public JFXTextField getTen() {
+        return Ten;
+    }
 
 }

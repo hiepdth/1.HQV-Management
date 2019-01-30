@@ -18,12 +18,11 @@ public class ManagementRevenue {
     @FXML private Label nhannam, nhannu, nhancuoi, bo, kiengtay, taitay, mattay, daytay, lactay, TongVangtay;
     @FXML private Label usd, yen, bat, sing, te, euro, uc, malaysia, canada, won, dailoan, bang, rub, thuysi, lao;
     @FXML private Label btmc, sjc, doji;
-    @FXML private Label vangNL;
     @FXML private Label Tien;
 
     DataPro data = new DataPro();
     HashMap<String,Integer> maindata = data.getList();
-    private String money = maindata.get("Tiền").toString();
+    private String money;
 
     public void handleAction(ActionEvent event){
         if(event.getTarget() == close){
@@ -123,13 +122,7 @@ public class ManagementRevenue {
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
                 //todo: TẤT CẢ CÁC MẶT HÀNG (Nếu mua thì chỉ trừ tiền gốc không cộng thêm sản phẩm)
-                //todo: BẢO TÍN MINH CHÂU
-                if(info[2].toLowerCase().equals("bảo tín minh châu") ||info[2].toLowerCase().equals("btmc")) {
-                    btmc.setText(addMoney(btmc.getText(), info[5]));
-                    if(info[14].equals("Tiền mặt"))
-                        money = subMoney(money, info[8]);
-                }
-                else if(info[14].equals("Tiền mặt"))
+                if(info[14].equals("Tiền mặt"))
                     money = subMoney(money, info[8]);
             }
             //todo: cập nhật khi mua Ngoại tệ
@@ -215,13 +208,13 @@ public class ManagementRevenue {
                         money = subMoney(money, info[5]);
                 }
                 //todo: THỤY SĨ
-                else if(info[1].toLowerCase().equals("thụy sĩ") ||info[1].toLowerCase().equals("thụy sĩ")) {
+                else if(info[1].toLowerCase().equals("thụy sĩ")) {
                     thuysi.setText(addMoney(thuysi.getText(), info[2]));
                     if(info[11].equals("Tiền mặt"))
                         money = subMoney(money, info[5]);
                 }
                 //todo: LÀO
-                else if(info[1].toLowerCase().equals("lào") ||info[1].toLowerCase().equals("lào")) {
+                else if(info[1].toLowerCase().equals("lào")) {
                     lao.setText(addMoney(lao.getText(), info[2]));
                     if(info[11].equals("Tiền mặt"))
                         money = subMoney(money, info[5]);
@@ -459,13 +452,13 @@ public class ManagementRevenue {
                         money = addMoney(money, info[5]);
                 }
                 //todo: THỤY SĨ
-                else if(info[1].toLowerCase().equals("thụy sĩ") ||info[1].toLowerCase().equals("thụy sĩ")) {
+                else if(info[1].toLowerCase().equals("thụy sĩ")) {
                     thuysi.setText(subMoney(thuysi.getText(), info[2]));
                     if(info[11].equals("Tiền mặt"))
                         money = addMoney(money, info[5]);
                 }
                 //todo: LÀO
-                else if(info[1].toLowerCase().equals("lào") ||info[1].toLowerCase().equals("lào")) {
+                else if(info[1].toLowerCase().equals("lào")) {
                     lao.setText(subMoney(lao.getText(), info[2]));
                     if(info[11].equals("Tiền mặt"))
                         money = addMoney(money, info[5]);
@@ -491,13 +484,12 @@ public class ManagementRevenue {
 
 
 
-
-
     @FXML
     private void initialize(){
         readData("src\\Data\\data.txt");
-        updateBought();
+        money = maindata.get("Tiền").toString();
         updateSell();
+        updateBought();
         Tien.setText(String.format("%,13d",Integer.parseInt(money)));
     }
 }

@@ -13,11 +13,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Management.ManagementFrame">
    <children>
-      <ImageView fitHeight="900.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true" visible="false">
-         <image>
-            <Image url="@../../images/diamond-ring-4k-wedding-background.jpg" />
-         </image>
-      </ImageView>
       <AnchorPane prefHeight="109.0" prefWidth="1300.0" style="-fx-background-color: #3d4056;">
          <children>
             <JFXButton layoutX="981.0" layoutY="37.0" prefHeight="35.0" prefWidth="226.0" text="Created by DinhHiep" textFill="#f2f5f5">
@@ -44,7 +39,7 @@
          <children>
             <VBox prefHeight="786.0" prefWidth="174.0">
                <children>
-                  <JFXButton fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="HOME" textFill="#f5e7e7">
+                  <JFXButton fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="25.0" onAction="#handleAction" prefHeight="56.0" prefWidth="177.0" stylesheets="@../../style.css" text="DASHBOARD" textFill="#f5e7e7">
                      <graphic>
                         <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                            <image>

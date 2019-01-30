@@ -1,0 +1,12 @@
+.pane
+{
+-fx-background-color : #cc664f;
+-fx-text-fill : #f5e7e7;
+}
+.pane:hover{
+-fx-background-color : #cc664f;
+}
+.pane:pressed
+{
+-fx-background-color : transparent;
+}

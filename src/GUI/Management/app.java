@@ -1,5 +1,11 @@
 package GUI.Management;
 
+
+/**
+ * author Đinh Thế Hiệp and Vũ Thị Hải Yến
+ * update 29/01/2019
+ */
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -19,10 +25,8 @@ public class app extends Application {
 //        window.makeWindow(primaryStage, "/GUI/Login/login.fxml");
 //        window.makeWindow(primaryStage, "/GUI/Payment/payment.fxml");
 //        window.makeWindow(primaryStage, "/GUI/Revenue/revenue.fxml");
-        window.makeWindow(primaryStage, "/GUI/Management/ManagementFrame.fxml");
-
-
-
+//        window.makeWindow(primaryStage, "/GUI/Management/ManagementFrame.fxml");
+        window.makeWindow(primaryStage, "/GUI/Dashboard/dashboard.fxml");
     }
 
 }

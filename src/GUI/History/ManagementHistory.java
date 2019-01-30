@@ -63,12 +63,13 @@ public class ManagementHistory {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(path)),"UTF-8"));
             String line;
+            int index = 1;
             while((line = reader.readLine()) != null){
                 String [] info = line.split(":");
                 AnchorPane pane = new AnchorPane();
                 pane.setPrefSize(1000, 65);
                 //tên khách hàng
-                Label name = new Label("Khách hàng: "+info[0].toUpperCase());
+                Label name = new Label(Integer.toString(index)+".Khách hàng: "+info[0].toUpperCase());
                 name.setFont(Font.font("System", FontPosture.ITALIC, 18));
                 name.setTextFill(Color.WHITE);
                 name.setLayoutX(0);
@@ -90,9 +91,12 @@ public class ManagementHistory {
                 time.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //data
                 Label database = new Label("Tên sản phẩm: "+info[1]+"        "+"Loại sản phẩm: " + info[2]+"        "+
-                                               "Đơn giá: "+info[3]+"        "+"Khối lượng: "+info[4]+"        "+
-                                               "Số lượng: "+info[5]+"        "+"Nhập lại: "+info[6]+"        " +
-                                               "Gia Công: "+info[7]+"        "+"Tổng tiền: "+info[8]);
+                                               "Đơn giá: "+info[3]+"        "+
+                                                "Khối lượng: "+info[4]+"        "+
+                                               "Số lượng: "+info[5]+"        "+
+                                                "Nhập lại: "+info[6]+"        " +
+                                               "Gia Công: "+info[7]+"        "+
+                                                "Tổng tiền: "+String.format("%,8d",Integer.parseInt(info[8])));
                 database.setFont(Font.font("System", FontPosture.ITALIC, 13));
                 database.setLayoutX(0);
                 database.setLayoutY(35);
@@ -113,6 +117,7 @@ public class ManagementHistory {
                     pane.getChildren().add(card);
                     pane.setStyle("-fx-background-color: #dd8a42");
                 }
+                index++;
                 fl.getChildren().add(pane);
             }
             reader.close();
@@ -132,13 +137,15 @@ public class ManagementHistory {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(path)),"UTF-8"));
             String line;
+            int index = 1;
             while((line = reader.readLine()) != null){
                 String [] info = line.split(":");
                 AnchorPane pane = new AnchorPane();
                 pane.setPrefSize(1000, 65);
                 //tên khách hàng
-                Label name = new Label("Khách hàng: " + info[0].toUpperCase());
+                Label name = new Label(Integer.toString(index)+".Khách hàng: " + info[0].toUpperCase());
                 name.setFont(Font.font("System", FontPosture.ITALIC, 18));
+                name.setTextFill(Color.WHITE);
                 name.setLayoutX(0);
                 name.setLayoutY(0);
                 name.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
@@ -147,21 +154,25 @@ public class ManagementHistory {
                 date.setFont(Font.font("System", FontPosture.ITALIC, 20));
                 date.setLayoutX(490);
                 date.setLayoutY(0);
+                date.setTextFill(Color.WHITE);
                 date.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //giờ
                 Label time = new Label(info[9] + ":" + info[10]);
                 time.setFont(Font.font("System", FontPosture.ITALIC, 20));
                 time.setLayoutX(950);
                 time.setLayoutY(0);
+                time.setTextFill(Color.WHITE);
                 time.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //data
-                Label database = new Label("Loại tiền: "+info[1]+"        "+"Số lượng: " + info[2]+"        "+
+                Label database = new Label("Loại tiền: "+info[1]+"        "+
+                        "Số lượng: " + String.format("%,8d",Integer.parseInt(info[2]))+"        "+
                         "Đơn giá: "+info[3]+"        "+"Phụ phí: "+info[4]+"        "+
-                        "Tổng tiền: "+info[5]);
+                        "Tổng tiền: "+String.format("%,8d",Integer.parseInt(info[5])));
                 database.setFont(Font.font("System", FontPosture.ITALIC, 13));
                 database.setLayoutX(0);
                 database.setLayoutY(35);
                 database.setAlignment(Pos.CENTER);
+                database.setTextFill(Color.WHITE);
                 database.setPrefSize(1000,35);
                 pane.getChildren().addAll(name, date, time, database);
                 pane.setStyle("-fx-background-color: #d65764");
@@ -175,6 +186,7 @@ public class ManagementHistory {
                     pane.getChildren().add(card);
                     pane.setStyle("-fx-background-color: #dd8a42");
                 }
+                index++;
                 fl.getChildren().add(pane);
             }
             reader.close();
@@ -194,36 +206,42 @@ public class ManagementHistory {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(path)),"UTF-8"));
             String line;
+            int index = 1;
             while((line = reader.readLine()) != null){
                 String [] info = line.split(":");
                 AnchorPane pane = new AnchorPane();
                 pane.setPrefSize(1000, 65);
                 //tên khách hàng
-                Label name = new Label("Khách hàng"+info[0].toUpperCase());
+                Label name = new Label(Integer.toString(index)+".Khách hàng"+info[0].toUpperCase());
                 name.setFont(Font.font("System", FontPosture.ITALIC, 18));
                 name.setLayoutX(0);
                 name.setLayoutY(0);
+                name.setTextFill(Color.WHITE);
                 name.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //ngày
                 Label date = new Label(info[6] +"/" + info[7] + "/" + info[8]);
                 date.setFont(Font.font("System", FontPosture.ITALIC, 20));
                 date.setLayoutX(490);
                 date.setLayoutY(0);
+                date.setTextFill(Color.WHITE);
                 date.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //giờ
                 Label time = new Label(info[9] + ":" + info[10]);
                 time.setFont(Font.font("System", FontPosture.ITALIC, 20));
                 time.setLayoutX(950);
                 time.setLayoutY(0);
+                time.setTextFill(Color.WHITE);
                 time.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //data
-                Label database = new Label("Tên sản phẩm: "+info[1]+"        "+"Số lượng: " + info[2]+"        "+
+                Label database = new Label("Tên sản phẩm: "+info[1]+"        "+
+                        "Số lượng: " + info[2]+"        "+
                         "Đơn giá: "+info[3]+"        "+"Phụ phí: "+info[4]+"        "+
-                        "Tổng tiền: "+info[5]);
+                        "Tổng tiền: "+String.format("%,8d",Integer.parseInt(info[5])));
                 database.setFont(Font.font("System", FontPosture.ITALIC, 13));
                 database.setLayoutX(0);
                 database.setLayoutY(35);
                 database.setAlignment(Pos.CENTER);
+                database.setTextFill(Color.WHITE);
                 database.setPrefSize(1000,35);
                 pane.getChildren().addAll(name, date, time, database);
                 pane.setStyle("-fx-background-color: #d65764");
@@ -237,6 +255,7 @@ public class ManagementHistory {
                     pane.getChildren().add(card);
                     pane.setStyle("-fx-background-color: #dd8a42");
                 }
+                index++;
                 fl.getChildren().add(pane);
             }
             reader.close();
@@ -249,7 +268,6 @@ public class ManagementHistory {
             System.out.println("Lịch sử giao dịch rỗng");
         }
     }
-
 
     @FXML
     public void initialize(){

@@ -1,5 +1,5 @@
 ﻿index:10
-Tiền:187159000
+Tiền:316756000
 Nhẫn ta:3000
 Kiềng ta:1000
 Tai ta:25
@@ -9,7 +9,7 @@ Lắc ta:15
 Vòng xi:5
 Tổng vàng ta:1
 btmc:104
-sjc:4
+sjc:2
 doji:100
 Nhẫn nam:100
 Nhẫn nữ:100
@@ -21,17 +21,17 @@ Mặt tây:100
 Dây tây:1009
 Lắc tây:100
 Tổng vàng tây:100
-USD:8800
-Yên:150000
-Bạt:10000
-Sing:1104
-Tệ:1100
-Euro:1400
+USD:5678
+Yên:50000
+Bạt:0
+Sing:0
+Tệ:0
+Euro:0
 Úc:0
 Malaysia:0
-Canada:300
+Canada:0
 Won:0
-Đài Loan:223400
+Đài Loan:101100
 Bảng:10
 Rub:0
 Thụy sĩ:0
