@@ -2,49 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7c944ba-96fa-46aa-98b1-7546f5ab5285" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BackEnd/Animation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pane.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/Data/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/Data/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/ManagementDashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Dashboard/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/History/ManagementHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/History/ManagementHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Login/ManagementLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Login/ManagementLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/History/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/History/history.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/app.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/payment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Revenue/ManagementRevenue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Revenue/ManagementRevenue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banKhac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banNgoaiTe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banVang.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaKhac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaNgoaiTe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaVang.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Dashboard/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Dashboard/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/History/ManagementHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/History/ManagementHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Management/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Management/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Payment/payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Payment/payment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/ban/banKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/ban/banKhac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/ban/banNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/ban/banNgoaiTe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/ban/banVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/ban/banVang.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/mua/muaKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/mua/muaKhac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/mua/muaVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/mua/muaVang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Revenue/revenue.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Revenue/revenue.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,42 +111,52 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="51" />
-          <entry key="java" value="3499" />
+          <entry key="java" value="3526" />
           <entry key="txt" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="51" />
-          <entry key="JAVA" value="3499" />
+          <entry key="JAVA" value="3526" />
           <entry key="PLAIN_TEXT" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="8" />
-          <entry key="fxml" value="3" />
-          <entry key="java" value="35" />
+          <entry key="fxml" value="4" />
+          <entry key="java" value="36" />
           <entry key="txt" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="8" />
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="36" />
           <entry key="PLAIN_TEXT" value="59" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1694">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            <state relative-caret-position="484">
+              <caret line="147" column="35" lean-forward="true" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -192,8 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Management/app.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="27" column="82" lean-forward="true" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
+            <state relative-caret-position="476">
+              <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,10 +184,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+            <state relative-caret-position="-1196">
+              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -272,7 +263,6 @@
         <option value="$PROJECT_DIR$/src/bai2.java" />
         <option value="$PROJECT_DIR$/src/Circle.java" />
         <option value="$PROJECT_DIR$/src/GUI/DatabaseProduct/DataPro.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" />
         <option value="$PROJECT_DIR$/src/BackEnd/Animation.java" />
         <option value="$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt" />
         <option value="$PROJECT_DIR$/src/Data/data.txt" />
@@ -285,14 +275,15 @@
         <option value="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" />
         <option value="$PROJECT_DIR$/src/GUI/History/ManagementHistory.java" />
         <option value="$PROJECT_DIR$/src/button.css" />
-        <option value="$PROJECT_DIR$/src/GUI/Management/app.java" />
         <option value="$PROJECT_DIR$/src/pane.css" />
-        <option value="$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java" />
         <option value="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Management/app.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="12" />
     <option name="y" value="140" />
     <option name="width" value="1612" />
@@ -334,7 +325,35 @@
               <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="DatabaseProduct" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="History" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
               <item name="Management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Revenue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -345,7 +364,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548845201888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548846500393" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -446,7 +465,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32462686" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32462686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -455,7 +474,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28850326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28850326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BackEnd/Animation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -715,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="41" column="100" selection-start-line="41" selection-start-column="100" selection-end-line="41" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -762,30 +766,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="147" column="35" lean-forward="true" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Management/app.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="27" column="82" lean-forward="true" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
+        <state relative-caret-position="476">
+          <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+        <state relative-caret-position="-1196">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1694">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
         </state>
       </provider>
     </entry>

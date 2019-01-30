@@ -57,7 +57,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="138.0" prefHeight="662.0" prefWidth="1200.0" style="-fx-background-color: #c23341;">
+      <AnchorPane layoutY="138.0" prefHeight="662.0" prefWidth="1200.0" style="-fx-background-color: #801636;">
          <children>
             <Label alignment="CENTER" layoutX="897.0" layoutY="25.0" prefHeight="42.0" prefWidth="119.0" style="-fx-border-color: yellow;" text="NGOẠI TỆ" textFill="#06bbe4">
                <font>

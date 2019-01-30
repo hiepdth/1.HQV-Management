@@ -37,7 +37,7 @@ public class ManagementLogin {
             NewWin win = new NewWin();
             if(taikhoan.getText().equals("dinhhiep") && matkhau.getText().equals("123")){
                 try {
-                    win.makeWindow(new Stage(), "/GUI/Management/ManagementFrame.fxml");
+                    win.makeWindow(new Stage(), "/GUI/Dashboard/dashboard.fxml");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

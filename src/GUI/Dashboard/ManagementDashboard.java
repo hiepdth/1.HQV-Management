@@ -30,6 +30,11 @@ public class ManagementDashboard {
         else if (event.getTarget() == close){
             Stage stage = (Stage) close.getScene().getWindow();
             stage.close();
+            try {
+                win.makeWindow(new Stage(), "/GUI/Management/ManagementFrame.fxml");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
