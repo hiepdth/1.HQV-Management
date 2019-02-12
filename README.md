@@ -1,7 +1,7 @@
 # 1.HQV-Management
-Phần mềm quản lí tiệm vàng HQH (Java)
+Phần mềm quản lí tiệm vàng Kim Dung HQV (Java)
 
-Phần mềm quản lí cho cửa hàng vàng HQH viết bằng ngôn ngữ JAVA
+Phần mềm quản lí cho cửa hàng vàng Kim Dung HQV viết bằng ngôn ngữ JAVA
 
 - Chương trình viết bằng JavaFX
 - Chương trình sử dụng jfoenix-8.0.7.jar.Link Github: https://github.com/jfoenixadmin/JFoenix
