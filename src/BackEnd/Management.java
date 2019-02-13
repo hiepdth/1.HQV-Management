@@ -16,9 +16,9 @@ public class Management {
 
     //todo: Hàm khởi tạo lấy dữ liệu từ tệp (thông tin path và name của sản phẩm vàngta-vàngtây-ngoạitệ
     public void init(){
-        initVangtaProduct(vangtas, "src\\products\\vangta.txt");
-        initVangtayProduct(vangtays, "src\\products\\vangtay.txt");
-        initCurrencyProduct(currencies, "src\\products\\ngoaite.txt");
+        initVangtaProduct(vangtas, "src\\BackEnd\\products\\vangta.txt");
+        initVangtayProduct(vangtays, "src\\BackEnd\\products\\vangtay.txt");
+        initCurrencyProduct(currencies, "src\\BackEnd\\products\\ngoaite.txt");
     }
 
     //todo:Lấy data sản phẩm Vàng ta

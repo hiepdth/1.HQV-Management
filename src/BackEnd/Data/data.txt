@@ -1,0 +1,38 @@
+﻿index:10
+Tiền:187025000.0
+Nhẫn ta:3000
+Kiềng ta:1000
+Tai ta:25
+Mặt ta:5
+Dây ta:10
+Lắc ta:15
+Vòng xi:5
+Tổng vàng ta:1
+btmc:115.5
+sjc:100
+doji:100
+Nhẫn nam:60
+Nhẫn nữ:277
+Nhẫn cưới:110
+Bộ:5
+Kiềng tây:21
+Tai tây:154
+Mặt tây:132
+Dây tây:138
+Lắc tây:62
+Tổng vàng tây:100
+USD:8024
+Yên:60000
+Bạt:0
+Sing:250
+Tệ:0
+Euro:2060
+Úc:0
+Malaysia:0
+Canada:0
+Won:111000
+Đài Loan:101100
+Bảng:10
+Rub:0
+Thụy sĩ:0
+Lào:0

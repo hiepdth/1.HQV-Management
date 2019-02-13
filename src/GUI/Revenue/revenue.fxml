@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Revenue.ManagementRevenue">
    <children>
-      <AnchorPane prefHeight="112.0" prefWidth="1200.0" style="-fx-background-color: #3d4956;">
+      <AnchorPane prefHeight="112.0" prefWidth="1200.0" style="-fx-background-color: #801336;">
          <children>
             <ImageView fitHeight="75.0" fitWidth="101.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -419,12 +419,12 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="406.0" layoutY="495.0" prefHeight="112.0" prefWidth="180.0" text="TIỀN" textFill="#13d199">
+            <Label alignment="CENTER" layoutX="425.0" layoutY="495.0" prefHeight="112.0" prefWidth="141.0" text="TIỀN" textFill="#13d199">
                <font>
                   <Font name="System Bold" size="35.0" />
                </font>
             </Label>
-            <Label fx:id="Tien" alignment="CENTER" contentDisplay="CENTER" layoutX="634.0" layoutY="495.0" prefHeight="112.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 2em; -fx-background-color: #1dbf40; -fx-background-radius: 2em;" text="249.642.000" textFill="#171717">
+            <Label fx:id="Tien" alignment="CENTER" contentDisplay="CENTER" layoutX="557.0" layoutY="495.0" prefHeight="112.0" prefWidth="289.0" style="-fx-border-color: black; -fx-border-radius: 2em; -fx-background-color: #1dbf40; -fx-background-radius: 2em;" textFill="#171717">
                <font>
                   <Font size="35.0" />
                </font>
@@ -439,6 +439,15 @@
                   <Font size="15.0" />
                </font>
             </Label>
+            <JFXButton fx:id="reload" contentDisplay="CENTER" layoutX="862.0" layoutY="527.0" onAction="#handleAction" prefHeight="42.0" prefWidth="45.0" stylesheets="@../../button.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/reload.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
          </children>
       </AnchorPane>
    </children>

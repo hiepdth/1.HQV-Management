@@ -1,24 +1,21 @@
 package GUI.Payment;
 
 import BackEnd.Animation;
-import GUI.DatabaseProduct.DataPro;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import org.omg.PortableInterceptor.INACTIVE;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Scanner;
 
 public class ManagementPayment {
 
@@ -34,7 +31,7 @@ public class ManagementPayment {
     private AnchorPane vangPane, ngoaitePane, otherPane;
 
     @FXML
-    private int TienHienCo;
+    private double TienHienCo;
     //Các biến quản lí thời gian
     @FXML
     private JFXTextField dd , mm, yyyy, hour, minute;
@@ -113,142 +110,154 @@ public class ManagementPayment {
 
         //TODO: Thanh toán cho sản phẩm vàng
         else if (event.getTarget() == thanhtoan){
-            String a1  = KhachHang.getText();
-            String a2  = TenSp.getText();
-            String a3  = Type.getText();
-            String a4  = DonGia.getText();
-            String a5  = KhoiLuong.getText();
-            String a6  = SoLuong.getText();
-            String a7  = NhapLai.getText();
-            String a8  = GiaCong.getText();
-            String a9  = TongTien.getText();
-            String a10 = dd.getText();
-            String a11 = mm.getText();
-            String a12 = yyyy.getText();
-            String a13 = hour.getText();
-            String a14 = minute.getText();
-            String muaorban;       //mua = 1, bán = 2;
-            String thanhtoan = null;      //tiền mặt = 1, quẹt thẻ = 2;
-            String ghichu = note.getText();
-            if(TienMat.isSelected()){
-                thanhtoan = "Tiền mặt";
-            }
-            else if(Card.isSelected()){
-                thanhtoan = "Card";
-            }
-            else
-                thanhtoan = "Tiền mặt";
-            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+a12+":"+a13+":"+a14+":"+thanhtoan+":"+ghichu;
-            if(mua.getStyle() == "-fx-background-color: #31bb4d")
-                saveHistory(his, "src\\history\\mua\\muaVang.txt");
-            else
-                saveHistory(his, "src\\history\\ban\\banVang.txt");
-            notifi.done(vangPane, "Giao dịch thành công!!");
-            KhachHang.setText("");
-            TenSp.setText("");
-            Type.setText("");
-            DonGia.setText("");
-            KhoiLuong.setText("");
-            SoLuong.setText("");
-            NhapLai.setText("");
-            GiaCong.setText("");
-            note.setText("");
-            TongTien.setText("");
-            TienMat.setSelected(false);
-            Card.setSelected(false);
-            initialize();
-//            Stage stage = (Stage) close.getScene().getWindow();
-//            stage.close();
+            VangPayment();
         }
         //TODO: Thanh toán cho sản phẩm ngoại tệ
         else if (event.getTarget() == thanhtoan1){
-            String a1 = KhachHang1.getText();
-            String a2 = LoaiTien.getText();
-            String a3 = SoLuong1.getText();
-            String a4 = DonGia1.getText();
-            String a5 = PhuPhi.getText();
-            String a6 = TongTien1.getText();
-            String a7 = dd1.getText();
-            String a8 = mm1.getText();
-            String a9 = yyyy1.getText();
-            String a10 = hour1.getText();
-            String a11 = minute1.getText();
-            String muaorban;       //mua = 1, bán = 2;
-            String thanhtoan = "";      //tiền mặt = 1, quẹt thẻ = 2;
-            String ghichu = note1.getText();
-            if(TienMat1.isSelected())
-                thanhtoan = "Tiền mặt";
-            else if(Card1.isSelected())
-                thanhtoan = "Card";
-            else
-                thanhtoan = "Tiền mặt";
-            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan+":"+ghichu;
-            if(mua.getStyle() == "-fx-background-color: #31bb4d")
-                saveHistory(his, "src\\history\\mua\\muaNgoaiTe.txt");
-            else
-                saveHistory(his, "src\\history\\ban\\banNgoaiTe.txt");
-            notifi.done(ngoaitePane, "Giao dịch thành công!!");
-            KhachHang1.setText("");
-            LoaiTien.setText("");
-            SoLuong1.setText("");
-            DonGia1.setText("");
-            PhuPhi.setText("");
-            TongTien1.setText("");
-            note1.setText("");
-            TienMat.setSelected(false);
-            Card.setSelected(false);
-            initialize();
-//            Stage stage = (Stage) close.getScene().getWindow();
-//            stage.close();
+            NgoaitePayment();
         }
 
         //TODO: Thanh toán cho sản phẩm khác
         else if(event.getTarget() == thanhtoan2){
-            String a1 = KhachHang2.getText();
-            String a2 = Ten.getText();
-            String a3 = SoLuong2.getText();
-            String a4 = DonGia2.getText();
-            String a5 = PhuPhi2.getText();
-            String a6 = TongTien2.getText();
-            String a7 = dd2.getText();
-            String a8 = mm2.getText();
-            String a9 = yyyy2.getText();
-            String a10 = hour2.getText();
-            String a11 = minute2.getText();
-            String muaorban;       //mua = 1, bán = 2;
-            String thanhtoan = "";      //tiền mặt = 1, quẹt thẻ = 2;
-            String ghichu = note2.getText();
-            if(TienMat2.isSelected())
-                thanhtoan = "Tiền mặt";
-            else if(Card2.isSelected())
-                thanhtoan = "Card";
-            else
-                thanhtoan = "Tiền mặt";
-
-            String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan+":"+ghichu;
-            if(mua.getStyle() == "-fx-background-color: #31bb4d")
-                saveHistory(his, "src\\history\\mua\\muaKhac.txt");
-            else
-                saveHistory(his, "src\\history\\ban\\banKhac.txt");
-            notifi.done(otherPane, "Giao dịch thành công!!");
-
-            KhachHang2.setText("");
-            Ten.setText("");
-            SoLuong2.setText("");
-            DonGia2.setText("");
-            PhuPhi2.setText("");
-            TongTien2.setText("");
-            note2.setText("");
-            TienMat.setSelected(false);
-            Card.setSelected(false);
-            initialize();
+            KhacPayment();
+        }
+    }
+    public void VangPayment(){
+        String a1  = KhachHang.getText();
+        String a2  = TenSp.getText();
+        String a3  = Type.getText();
+        String a4  = DonGia.getText();
+        String a5  = KhoiLuong.getText();
+        String a6  = SoLuong.getText();
+        String a7  = NhapLai.getText();
+        String a8  = GiaCong.getText();
+        String a9  = TongTien.getText();
+        String a10 = dd.getText();
+        String a11 = mm.getText();
+        String a12 = yyyy.getText();
+        String a13 = hour.getText();
+        String a14 = minute.getText();
+        String muaorban;       //mua = 1, bán = 2;
+        String thanhtoan = null;      //tiền mặt = 1, quẹt thẻ = 2;
+        String ghichu = note.getText();
+        if(TienMat.isSelected()){
+            thanhtoan = "Tiền mặt";
+        }
+        else if(Card.isSelected()){
+            thanhtoan = "Card";
+        }
+        else
+            thanhtoan = "Tiền mặt";
+        String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+a12+":"+a13+":"+a14+":"+thanhtoan+":"+ghichu;
+        if(mua.getStyle() == "-fx-background-color: #31bb4d")
+            saveHistory(his, "src\\BackEnd\\history\\mua\\muaVang.txt");
+        else
+            saveHistory(his, "src\\BackEnd\\history\\ban\\banVang.txt");
+        notifi.done(vangPane, "Giao dịch thành công!!");
+        KhachHang.setText("");
+        TenSp.setText("");
+        Type.setText("");
+        DonGia.setText("");
+        KhoiLuong.setText("");
+        SoLuong.setText("");
+        NhapLai.setText("");
+        GiaCong.setText("");
+        note.setText("");
+        TongTien.setText("");
+        TienMat.setSelected(false);
+        Card.setSelected(false);
+        Tong.setText("");
+        initialize();
 //            Stage stage = (Stage) close.getScene().getWindow();
 //            stage.close();
-        }
+    }
+    public void NgoaitePayment(){
+        String a1 = KhachHang1.getText();
+        String a2 = LoaiTien.getText();
+        String a3 = SoLuong1.getText();
+        String a4 = DonGia1.getText();
+        String a5 = PhuPhi.getText();
+        String a6 = TongTien1.getText();
+        String a7 = dd1.getText();
+        String a8 = mm1.getText();
+        String a9 = yyyy1.getText();
+        String a10 = hour1.getText();
+        String a11 = minute1.getText();
+        String muaorban;       //mua = 1, bán = 2;
+        String thanhtoan = "";      //tiền mặt = 1, quẹt thẻ = 2;
+        String ghichu = note1.getText();
+        if(TienMat1.isSelected())
+            thanhtoan = "Tiền mặt";
+        else if(Card1.isSelected())
+            thanhtoan = "Card";
+        else
+            thanhtoan = "Tiền mặt";
+        String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan+":"+ghichu;
+        if(mua.getStyle() == "-fx-background-color: #31bb4d")
+            saveHistory(his, "src\\BackEnd\\history\\mua\\muaNgoaiTe.txt");
+        else
+            saveHistory(his, "src\\BackEnd\\history\\ban\\banNgoaiTe.txt");
+        notifi.done(ngoaitePane, "Giao dịch thành công!!");
+        KhachHang1.setText("");
+        LoaiTien.setText("");
+        SoLuong1.setText("");
+        DonGia1.setText("");
+        PhuPhi.setText("");
+        TongTien1.setText("");
+        note1.setText("");
+        TienMat.setSelected(false);
+        Card.setSelected(false);
+        Tong1.setText("");
+        initialize();
+//            Stage stage = (Stage) close.getScene().getWindow();
+//            stage.close();
+    }
+    public void KhacPayment(){
+        String a1 = KhachHang2.getText();
+        String a2 = Ten.getText();
+        String a3 = SoLuong2.getText();
+        String a4 = DonGia2.getText();
+        String a5 = PhuPhi2.getText();
+        String a6 = TongTien2.getText();
+        String a7 = dd2.getText();
+        String a8 = mm2.getText();
+        String a9 = yyyy2.getText();
+        String a10 = hour2.getText();
+        String a11 = minute2.getText();
+        String muaorban;       //mua = 1, bán = 2;
+        String thanhtoan = "";      //tiền mặt = 1, quẹt thẻ = 2;
+        String ghichu = note2.getText();
+        if(TienMat2.isSelected())
+            thanhtoan = "Tiền mặt";
+        else if(Card2.isSelected())
+            thanhtoan = "Card";
+        else
+            thanhtoan = "Tiền mặt";
 
+        String his = a1+":"+a2+":"+a3+":"+a4+":"+a5+":"+a6+":"+a7+":"+a8+":"+a9+":"+a10+":"+a11+":"+thanhtoan+":"+ghichu;
+        if(mua.getStyle() == "-fx-background-color: #31bb4d")
+            saveHistory(his, "src\\BackEnd\\history\\mua\\muaKhac.txt");
+        else
+            saveHistory(his, "src\\BackEnd\\history\\ban\\banKhac.txt");
+        notifi.done(otherPane, "Giao dịch thành công!!");
+
+        KhachHang2.setText("");
+        Ten.setText("");
+        SoLuong2.setText("");
+        DonGia2.setText("");
+        PhuPhi2.setText("");
+        TongTien2.setText("");
+        note2.setText("");
+        TienMat.setSelected(false);
+        Card.setSelected(false);
+        Tong2.setText("");
+        initialize();
+//            Stage stage = (Stage) close.getScene().getWindow();
+//            stage.close();
     }
     @FXML
     public void initialize(){
+        acceptPayment();
         Calendar c = Calendar.getInstance();
         dd.setText(Integer.toString(c.get(Calendar.DAY_OF_MONTH)));
         mm.setText(Integer.toString(c.get(Calendar.MONTH)+1));
@@ -284,21 +293,54 @@ public class ManagementPayment {
         }
     }
 
-    public void saveData(String path){
+    public void acceptPayment(){
         try {
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(path),true), "UTF-8"));
-//            for(int i = 0; i < )
-            writer.newLine();
-            writer.close();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            thanhtoan.setOnKeyPressed(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    if (event.getCode() == KeyCode.ENTER) {
+                        VangPayment();
+                    }
+                }
+            });
+            TongTien.setOnKeyReleased(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    Tong.setText(String.format("%1$,0f", Double.parseDouble(TongTien.getText())));
+                }
+            });
+            TongTien1.setOnKeyPressed(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    if (event.getCode() == KeyCode.ENTER) {
+                        NgoaitePayment();
+                    }
+                }
+            });
+            TongTien1.setOnKeyReleased(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    Tong1.setText(String.format("%1$,0f", Double.parseDouble(TongTien1.getText())));
+                }
+            });
+            TongTien2.setOnKeyPressed(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    if (event.getCode() == KeyCode.ENTER) {
+                        KhacPayment();
+                    }
+                }
+            });
+            TongTien2.setOnKeyReleased(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    Tong2.setText(String.format("%1$,.0f", Double.parseDouble(TongTien2.getText())));
+                }
+            });
+        } catch (NumberFormatException e){
+            System.out.println("Lỗi định dạng!!");
         }
     }
-
 
     public JFXTextField getTenSp() {
         return TenSp;
@@ -311,5 +353,4 @@ public class ManagementPayment {
     public JFXTextField getTen() {
         return Ten;
     }
-
 }

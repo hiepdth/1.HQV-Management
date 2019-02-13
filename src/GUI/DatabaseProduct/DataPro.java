@@ -4,10 +4,10 @@ import java.io.*;
 import java.util.HashMap;
 
 public class DataPro {
-    protected HashMap<String, Integer> list = new HashMap<>();
+    protected HashMap<String, Double> list = new HashMap<>();
 
     public DataPro(){
-        update("src\\Data\\data.txt");
+        update("src\\BackEnd\\Data\\data.txt");
     }
 
     public void update(String path){
@@ -16,7 +16,7 @@ public class DataPro {
             String line;
             while ((line = reader.readLine()) != null){
                 String info[] = line.split(":");
-                int temp = Integer.parseInt(info[1]);
+                double temp = Double.parseDouble(info[1]);
                 list.put(info[0], temp);
             }
             reader.close();
@@ -27,11 +27,11 @@ public class DataPro {
         }
     }
 
-    public HashMap<String, Integer> getList() {
+    public HashMap<String, Double> getList() {
         return list;
     }
 
-    public void setList(HashMap<String, Integer> list) {
+    public void setList(HashMap<String, Double> list) {
         this.list = list;
     }
 }

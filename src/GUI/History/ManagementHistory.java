@@ -40,20 +40,20 @@ public class ManagementHistory {
         else if(event.getTarget() == vang){
             banFlPane.getChildren().clear();
             muaFlPane.getChildren().clear();
-            updateHistory("src\\history\\ban\\banVang.txt", banFlPane, banScPane);
-            updateHistory("src\\history\\mua\\muaVang.txt", muaFlPane, muaScPane);
+            updateHistory("src\\BackEnd\\history\\ban\\banVang.txt", banFlPane, banScPane);
+            updateHistory("src\\BackEnd\\history\\mua\\muaVang.txt", muaFlPane, muaScPane);
         }
         else if(event.getTarget() == ngoaite){
             banFlPane.getChildren().clear();
             muaFlPane.getChildren().clear();
-            updateNgoaite("src\\history\\ban\\banNgoaiTe.txt", banFlPane, banScPane);
-            updateNgoaite("src\\history\\mua\\muaNgoaiTe.txt", muaFlPane, muaScPane);
+            updateNgoaite("src\\BackEnd\\history\\ban\\banNgoaiTe.txt", banFlPane, banScPane);
+            updateNgoaite("src\\BackEnd\\history\\mua\\muaNgoaiTe.txt", muaFlPane, muaScPane);
         }
         else if(event.getTarget() == other){
             banFlPane.getChildren().clear();
             muaFlPane.getChildren().clear();
-            updateOtherProduction("src\\history\\ban\\banKhac.txt", banFlPane, banScPane);
-            updateOtherProduction("src\\history\\mua\\muaKhac.txt", muaFlPane, muaScPane);
+            updateOtherProduction("src\\BackEnd\\history\\ban\\banKhac.txt", banFlPane, banScPane);
+            updateOtherProduction("src\\BackEnd\\history\\mua\\muaKhac.txt", muaFlPane, muaScPane);
         }
     }
 
@@ -96,7 +96,7 @@ public class ManagementHistory {
                                                "Số lượng: "+info[5]+"        "+
                                                 "Nhập lại: "+info[6]+"        " +
                                                "Gia Công: "+info[7]+"        "+
-                                                "Tổng tiền: "+String.format("%,8d",Integer.parseInt(info[8])));
+                                                "Tổng tiền: "+String.format("%1$,.1f",Double.parseDouble(info[8])));
                 database.setFont(Font.font("System", FontPosture.ITALIC, 13));
                 database.setLayoutX(0);
                 database.setLayoutY(35);
@@ -128,10 +128,10 @@ public class ManagementHistory {
             e.printStackTrace();
         } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Lịch sử giao dịch rỗng");
+        } catch (NumberFormatException e){
+            System.out.println("Lỗi định dạng!");
         }
     }
-
-
     //TODO: Update lịch sử giao dịch cho sản phẩm ngoại tệ
     public void updateNgoaite(String path, FlowPane fl, ScrollPane sc){
         try {
@@ -165,9 +165,9 @@ public class ManagementHistory {
                 time.setPrefSize(Label.USE_COMPUTED_SIZE, Label.USE_COMPUTED_SIZE);
                 //data
                 Label database = new Label("Loại tiền: "+info[1]+"        "+
-                        "Số lượng: " + String.format("%,8d",Integer.parseInt(info[2]))+"        "+
+                        "Số lượng: " + String.format("%1$,.1f",Double.parseDouble(info[2]))+"        "+
                         "Đơn giá: "+info[3]+"        "+"Phụ phí: "+info[4]+"        "+
-                        "Tổng tiền: "+String.format("%,8d",Integer.parseInt(info[5])));
+                        "Tổng tiền: "+String.format("%1$,.1f",Double.parseDouble(info[5])));
                 database.setFont(Font.font("System", FontPosture.ITALIC, 13));
                 database.setLayoutX(0);
                 database.setLayoutY(35);
@@ -197,10 +197,10 @@ public class ManagementHistory {
             e.printStackTrace();
         } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Lịch sử giao dịch rỗng");
+        } catch (NumberFormatException e){
+            System.out.println("Lỗi định dạng!");
         }
     }
-
-
     //TODO: Update lịch sử giao dịch cho các sản phẩm khác
     public void updateOtherProduction(String path, FlowPane fl, ScrollPane sc){
         try {
@@ -236,7 +236,7 @@ public class ManagementHistory {
                 Label database = new Label("Tên sản phẩm: "+info[1]+"        "+
                         "Số lượng: " + info[2]+"        "+
                         "Đơn giá: "+info[3]+"        "+"Phụ phí: "+info[4]+"        "+
-                        "Tổng tiền: "+String.format("%,8d",Integer.parseInt(info[5])));
+                        "Tổng tiền: "+String.format("%1$,.1f",Double.parseDouble(info[5])));
                 database.setFont(Font.font("System", FontPosture.ITALIC, 13));
                 database.setLayoutX(0);
                 database.setLayoutY(35);
@@ -266,12 +266,14 @@ public class ManagementHistory {
             e.printStackTrace();
         } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Lịch sử giao dịch rỗng");
+        } catch (NumberFormatException e){
+            System.out.println("Lỗi định dạng!");
         }
     }
 
     @FXML
     public void initialize(){
-        updateHistory("src\\history\\ban\\banVang.txt", banFlPane, banScPane);
-        updateHistory("src\\history\\mua\\muaVang.txt", muaFlPane, muaScPane);
+        updateHistory("src\\BackEnd\\history\\ban\\banVang.txt", banFlPane, banScPane);
+        updateHistory("src\\BackEnd\\history\\mua\\muaVang.txt", muaFlPane, muaScPane);
     }
 }

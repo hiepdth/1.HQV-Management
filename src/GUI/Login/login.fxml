@@ -19,7 +19,7 @@
          </image></ImageView>
       <AnchorPane layoutX="251.0" layoutY="152.0" prefHeight="350.0" prefWidth="500.0" style="-fx-border-color: #2d3965; -fx-border-radius: 2em;">
          <children>
-            <JFXButton fx:id="login" layoutX="197.0" layoutY="272.0" onAction="#handleAction" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #27b879;" text="Login" textFill="#b5223d">
+            <JFXButton fx:id="_login" layoutX="197.0" layoutY="272.0" onAction="#handleAction" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #27b879;" text="Login" textFill="#b5223d">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -34,12 +34,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXTextField fx:id="taikhoan" focusColor="#c94131" layoutX="168.0" layoutY="141.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
+            <JFXTextField fx:id="_taikhoan" focusColor="#c94131" layoutX="168.0" layoutY="141.0" onAction="#handleAction" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
                <font>
                   <Font size="16.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField fx:id="matkhau" focusColor="#da6845" layoutX="168.0" layoutY="203.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
+            <JFXPasswordField fx:id="_matkhau" focusColor="#da6845" layoutX="168.0" layoutY="203.0" prefHeight="25.0" prefWidth="184.0" unFocusColor="#26bf57">
                <font>
                   <Font size="16.0" />
                </font>

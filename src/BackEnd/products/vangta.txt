@@ -1,0 +1,6 @@
+﻿src/images/vangta/namphan.jpg:Năm phân
+src/images/vangta/motchi.jpg:Một chỉ
+src/images/vangta/haichi.jpg:Hai chỉ
+src/images/vangta/bachi.jpg:Ba chỉ
+src/images/vangta/namchi.jpg:Năm chỉ
+src/images/vangta/muoichi.jpg:Mười chỉ

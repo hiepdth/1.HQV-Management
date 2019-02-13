@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class ManagementRevenue {
     @FXML
-    private JFXButton close, minimize;
+    private JFXButton close, minimize, reload;
     @FXML private Label nhanta, kiengta, taita, matta, dayta, lacta, vongxi, TongVangta;
     @FXML private Label nhannam, nhannu, nhancuoi, bo, kiengtay, taitay, mattay, daytay, lactay, TongVangtay;
     @FXML private Label usd, yen, bat, sing, te, euro, uc, malaysia, canada, won, dailoan, bang, rub, thuysi, lao;
@@ -21,7 +21,7 @@ public class ManagementRevenue {
     @FXML private Label Tien;
 
     DataPro data = new DataPro();
-    HashMap<String,Integer> maindata = data.getList();
+    HashMap<String,Double> maindata = data.getList();
     private String money;
 
     public void handleAction(ActionEvent event){
@@ -32,6 +32,9 @@ public class ManagementRevenue {
         else if(event.getTarget() == minimize){
             Stage stage = (Stage) close.getScene().getWindow();
             stage.setIconified(true);
+        }
+        else if(event.getTarget() == reload){
+            initialize();
         }
     }
 
@@ -46,9 +49,9 @@ public class ManagementRevenue {
             dayta.setText(maindata.get("Dây ta").toString());
             lacta.setText(maindata.get("Lắc ta").toString());
             vongxi.setText(maindata.get("Vòng xi").toString());
-            int tong = maindata.get("Nhẫn ta")+maindata.get("Kiềng ta")+maindata.get("Tai ta")+maindata.get("Mặt ta")+
+            double tong = maindata.get("Nhẫn ta")+maindata.get("Kiềng ta")+maindata.get("Tai ta")+maindata.get("Mặt ta")+
                     maindata.get("Dây ta")+maindata.get("Lắc ta") + maindata.get("Vòng xi");
-            TongVangta.setText(Integer.toString(tong));
+            TongVangta.setText(Double.toString(tong));
             btmc.setText(maindata.get("btmc").toString());
             sjc.setText(maindata.get("sjc").toString());
             doji.setText(maindata.get("doji").toString());
@@ -62,9 +65,9 @@ public class ManagementRevenue {
             mattay.setText(maindata.get("Mặt tây").toString());
             daytay.setText(maindata.get("Dây tây").toString());
             lactay.setText(maindata.get("Lắc tây").toString());
-            int tong1 = maindata.get("Nhẫn nam")+maindata.get("Nhẫn nữ")+maindata.get("Nhẫn cưới")+maindata.get("Bộ")+
+            double tong1 = maindata.get("Nhẫn nam")+maindata.get("Nhẫn nữ")+maindata.get("Nhẫn cưới")+maindata.get("Bộ")+
                     maindata.get("Kiềng tây")+maindata.get("Tai tây")+maindata.get("Mặt tây")+maindata.get("Dây tây")+maindata.get("Lắc tây");
-            TongVangtay.setText(Integer.toString(tong1));
+            TongVangtay.setText(Double.toString(tong1));
 
             //Ngoại tệ
             usd.setText(maindata.get("USD").toString());
@@ -84,7 +87,7 @@ public class ManagementRevenue {
             lao.setText(maindata.get("Lào").toString());
 
             //Tổng tiền ngăn kéo
-            Tien.setText(String.format("%,13d",maindata.get("Tiền")));
+            Tien.setText(String.format("%1$,.0f",maindata.get("Tiền")));
             reader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -94,17 +97,17 @@ public class ManagementRevenue {
     }
 
     public String addMoney(String oldmoney, String change){
-        int a = Integer.parseInt(oldmoney);
-        int b = Integer.parseInt(change);
-        int sum = a+b;
-        return Integer.toString(sum);
+        Double a = Double.parseDouble(oldmoney);
+        Double b = Double.parseDouble(change);
+        Double sum = a+b;
+        return Double.toString(sum);
 
     }
     public String subMoney(String oldmoney, String change){
-        int a = Integer.parseInt(oldmoney);
-        int b = Integer.parseInt(change);
-        int sub = a-b;
-        return Integer.toString(sub);
+        Double a = Double.parseDouble(oldmoney);
+        Double b = Double.parseDouble(change);
+        Double sub = a-b;
+        return Double.toString(sub);
     }
 
 
@@ -117,7 +120,7 @@ public class ManagementRevenue {
         try {
             //todo: cập nhật khi mua Vàng
             BufferedReader reader = null;
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\history\\mua\\muaVang.txt")),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\BackEnd\\history\\mua\\muaVang.txt")),"UTF-8"));
             String line;
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
@@ -126,7 +129,7 @@ public class ManagementRevenue {
                     money = subMoney(money, info[8]);
             }
             //todo: cập nhật khi mua Ngoại tệ
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\history\\mua\\muaNgoaiTe.txt")),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\BackEnd\\history\\mua\\muaNgoaiTe.txt")),"UTF-8"));
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
                 //todo: ĐÔ (MỸ)
@@ -221,7 +224,7 @@ public class ManagementRevenue {
                 }
             }
             //TODO: Mua các sản phẩm khác
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\history\\mua\\muaKhac.txt")),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\BackEnd\\history\\mua\\muaKhac.txt")),"UTF-8"));
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
                 if(info[11].equals("Tiền mặt"))
@@ -249,7 +252,7 @@ public class ManagementRevenue {
         try {
             //todo: cập nhật khi bán Vàng
             BufferedReader reader = null;
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\history\\ban\\banVang.txt")),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\BackEnd\\history\\ban\\banVang.txt")),"UTF-8"));
             String line;
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
@@ -297,19 +300,19 @@ public class ManagementRevenue {
                 }
                 //todo: BẢO TÍN MINH CHÂU
                 else if(info[2].toLowerCase().equals("bảo tín minh châu") ||info[2].toLowerCase().equals("btmc")) {
-                    btmc.setText(subMoney(btmc.getText(), info[5]));
+                    btmc.setText(subMoney(btmc.getText(), info[4]));
                     if(info[14].equals("Tiền mặt"))
                         money = addMoney(money, info[8]);
                 }
                 //todo: DOJI
                 else if(info[2].toLowerCase().equals("doji") ||info[2].toLowerCase().equals("do ji")) {
-                    doji.setText(subMoney(doji.getText(), info[5]));
+                    doji.setText(subMoney(doji.getText(), info[4]));
                     if(info[14].equals("Tiền mặt"))
                         money = addMoney(money, info[8]);
                 }
                 //todo: SJC
                 else if(info[2].toLowerCase().equals("sjc") ||info[2].toLowerCase().equals("vàng sjc")) {
-                    sjc.setText(subMoney(sjc.getText(), info[5]));
+                    sjc.setText(subMoney(sjc.getText(), info[4]));
                     if(info[14].equals("Tiền mặt"))
                         money = addMoney(money, info[8]);
                 }
@@ -370,7 +373,7 @@ public class ManagementRevenue {
 
             }
             //todo: cập nhật khi bán Ngoại tệ
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\history\\ban\\banNgoaiTe.txt")),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\BackEnd\\history\\ban\\banNgoaiTe.txt")),"UTF-8"));
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
                 //todo: ĐÔ (MỸ)
@@ -465,7 +468,7 @@ public class ManagementRevenue {
                 }
             }
             //TODO: Bán các sản phẩm khác
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\history\\mua\\muaKhac.txt")),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File("src\\BackEnd\\history\\ban\\banKhac.txt")),"UTF-8"));
             while ((line = reader.readLine()) != null){
                 String info [] = line.split(":");
                 if(info[11].equals("Tiền mặt"))
@@ -480,16 +483,12 @@ public class ManagementRevenue {
         }
     }
 
-
-
-
-
     @FXML
     private void initialize(){
-        readData("src\\Data\\data.txt");
+        readData("src\\BackEnd\\Data\\data.txt");
         money = maindata.get("Tiền").toString();
         updateSell();
         updateBought();
-        Tien.setText(String.format("%,13d",Integer.parseInt(money)));
+        Tien.setText(String.format("%1$,.0f",Double.parseDouble(money)));
     }
 }
