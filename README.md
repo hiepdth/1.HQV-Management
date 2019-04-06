@@ -22,10 +22,10 @@ Created by:
   ![1](https://user-images.githubusercontent.com/37697235/55665336-c1ee3380-5867-11e9-9c1d-4b78be30b01e.png)
   
       3.PAYMENT
-   ![3](https://user-images.githubusercontent.com/37697235/51981283-33ef7880-24c5-11e9-87d1-17122987ea6e.png)
+   ![3](https://user-images.githubusercontent.com/37697235/55665452-1f837f80-586a-11e9-8ba7-5fefb656657c.png)
   
       4.HISTORY
   ![2](https://user-images.githubusercontent.com/37697235/55665417-6cb32180-5869-11e9-9124-afcb8097b91d.png)
   
       5.REVENUE
-  ![5](https://user-images.githubusercontent.com/37697235/51847092-89a11500-234d-11e9-9fc6-be556430b6e7.png)
+  ![4](https://user-images.githubusercontent.com/37697235/55665453-1f837f80-586a-11e9-9eea-d406bea23330.png)
