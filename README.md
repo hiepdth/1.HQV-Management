@@ -19,7 +19,7 @@ Created by:
   ![6](https://user-images.githubusercontent.com/37697235/51981232-16baaa00-24c5-11e9-9752-526f9f2aac11.png)
   
       3.MANAGEMENT
-  ![2](https://user-images.githubusercontent.com/37697235/51847087-89087e80-234d-11e9-9a63-7b5ddaa32acc.png)
+  ![1](https://user-images.githubusercontent.com/37697235/55665336-c1ee3380-5867-11e9-9c1d-4b78be30b01e.png)
   
       3.PAYMENT
    ![3](https://user-images.githubusercontent.com/37697235/51981283-33ef7880-24c5-11e9-87d1-17122987ea6e.png)
