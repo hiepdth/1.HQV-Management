@@ -7,31 +7,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7c944ba-96fa-46aa-98b1-7546f5ab5285" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/Data/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banKhac.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banNgoaiTe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/ban/banVang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaKhac.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaNgoaiTe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/history/mua/muaVang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackEnd/Management.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/Management.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/DatabaseProduct/DataPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/DatabaseProduct/DataPro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/History/ManagementHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/History/ManagementHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SinhVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baitap/BaoVe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baitap/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baitap/GiamDoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baitap/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baitap/NvKinhdoanh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baitap/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/Data/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/Data/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/ban/banKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/ban/banKhac.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/ban/banNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/ban/banNgoaiTe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/ban/banVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/ban/banVang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/mua/muaKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/mua/muaKhac.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/mua/muaNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/mua/muaNgoaiTe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/mua/muaVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/BackEnd/history/mua/muaVang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Login/ManagementLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Login/ManagementLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Management/ManagementFrame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Payment/ManagementPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HQVManagementApp/GUI/Revenue/ManagementRevenue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/Data/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/Data/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/history/ban/banKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/history/ban/banKhac.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/history/ban/banNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/history/ban/banNgoaiTe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/history/ban/banVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/history/ban/banVang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/history/mua/muaKhac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/history/mua/muaKhac.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/history/mua/muaNgoaiTe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/history/mua/muaNgoaiTe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/history/mua/muaVang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/history/mua/muaVang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Management/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Management/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/ban/banKhac.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/ban/banNgoaiTe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/ban/banVang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/mua/muaKhac.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/mua/muaVang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/ngoaite - Copy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/ngoaite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/vangta - Copy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/vangta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/vangtay - Copy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/vangtay.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,62 +132,110 @@
     <session id="-2143058815">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.47" value="2" />
+          <entry key="project.open.time.47" value="3" />
           <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.57" value="2" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="51" />
-          <entry key="java" value="5325" />
-          <entry key="txt" value="170" />
+          <entry key="java" value="10607" />
+          <entry key="txt" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="51" />
-          <entry key="JAVA" value="5325" />
-          <entry key="PLAIN_TEXT" value="170" />
+          <entry key="JAVA" value="10607" />
+          <entry key="PLAIN_TEXT" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="11" />
-          <entry key="fxml" value="6" />
-          <entry key="java" value="54" />
-          <entry key="txt" value="88" />
+          <entry key="fxml" value="7" />
+          <entry key="java" value="93" />
+          <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="11" />
-          <entry key="JAVA" value="54" />
-          <entry key="PLAIN_TEXT" value="88" />
-          <entry key="XML" value="6" />
+          <entry key="JAVA" value="93" />
+          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BackEnd/Management.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Management/app.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="462">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="method#addVangtaProduction#0;class#ManagementFrame#0" />
+                <element signature="method#addVangtayProduction#0;class#ManagementFrame#0" />
+                <element signature="method#addNgoaiteProduction#0;class#ManagementFrame#0" />
+                <element signature="method#searchProduct#0;class#ManagementFrame#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1056">
+              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/dashboard.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -190,10 +256,17 @@
       <find>private</find>
       <find>Integer</find>
       <find>Int</find>
+      <find>:</find>
+      <find>NTĐ</find>
+      <find>sjc</find>
+      <find>:doji:doji</find>
+      <find>:btmc:btmc:</find>
+      <find>19:24</find>
     </findStrings>
     <replaceStrings>
       <replace>protected</replace>
       <replace>Double</replace>
+      <replace>||</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -202,22 +275,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/GUI/Login/Dangnhap.fxml" />
-        <option value="$PROJECT_DIR$/src/GUI/Managent/Dangnhap.fxml" />
-        <option value="$PROJECT_DIR$/src/GUI/Login/login.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Managent/MakeNewWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Managent/NewWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Managent/newWin.java" />
-        <option value="$PROJECT_DIR$/src/tesst.java" />
-        <option value="$PROJECT_DIR$/src/VuThiHaiYen_Bai4.java" />
-        <option value="$PROJECT_DIR$/src/VuThiHaiYen_Bai3.java" />
-        <option value="$PROJECT_DIR$/src/BackEnd/Ngoaite.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Managent/ManagementFrame.fxml" />
-        <option value="$PROJECT_DIR$/src/BackEnd/Vangtay.java" />
-        <option value="$PROJECT_DIR$/src/BackEnd/Production.java" />
-        <option value="$PROJECT_DIR$/src/BackEnd/Currency.java" />
-        <option value="$PROJECT_DIR$/src/BackEnd/Vangta.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Payment/payment.fxml" />
         <option value="$PROJECT_DIR$/src/GUI/Dashboard/dashboard.fxml" />
         <option value="$PROJECT_DIR$/src/GUI/History/history.fxml" />
         <option value="$PROJECT_DIR$/src/GUI/Managent/app.java" />
@@ -228,46 +285,60 @@
         <option value="$PROJECT_DIR$/src/bai3.java" />
         <option value="$PROJECT_DIR$/src/GUI/Managent/ManagementFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Login/login.fxml" />
-        <option value="$PROJECT_DIR$/src/bai1.java" />
-        <option value="$PROJECT_DIR$/src/SinhVien.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/bai2.java" />
         <option value="$PROJECT_DIR$/src/Circle.java" />
         <option value="$PROJECT_DIR$/src/BackEnd/Animation.java" />
         <option value="$PROJECT_DIR$/src/button.css" />
         <option value="$PROJECT_DIR$/src/pane.css" />
-        <option value="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Management/app.java" />
         <option value="$PROJECT_DIR$/src/history/mua/muaVang.txt" />
         <option value="$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt" />
         <option value="$PROJECT_DIR$/src/history/mua/muaKhac.txt" />
         <option value="$PROJECT_DIR$/src/style.css" />
         <option value="$PROJECT_DIR$/src/history/ban/banKhac.txt" />
         <option value="$PROJECT_DIR$/src/history/ban/banNgoaiTe.txt" />
-        <option value="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" />
         <option value="$PROJECT_DIR$/src/history/ban/banVang.txt" />
         <option value="$PROJECT_DIR$/src/Data/data.txt" />
         <option value="$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java" />
         <option value="$PROJECT_DIR$/src/GUI/DatabaseProduct/DataPro.java" />
         <option value="$PROJECT_DIR$/src/GUI/History/ManagementHistory.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" />
         <option value="$PROJECT_DIR$/src/BackEnd/Management.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java" />
+        <option value="$PROJECT_DIR$/src/BackEnd/history/mua/muaKhac.txt" />
+        <option value="$PROJECT_DIR$/src/BackEnd/Data/data.txt" />
+        <option value="$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java" />
+        <option value="$PROJECT_DIR$/src/BackEnd/history/ban/banNgoaiTe.txt" />
+        <option value="$PROJECT_DIR$/src/BackEnd/history/mua/muaNgoaiTe.txt" />
+        <option value="$PROJECT_DIR$/src/BackEnd/history/mua/muaVang.txt" />
+        <option value="$PROJECT_DIR$/src/BackEnd/history/ban/banKhac.txt" />
+        <option value="$PROJECT_DIR$/src/BackEnd/history/ban/banVang.txt" />
+        <option value="$PROJECT_DIR$/src/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/SinhVien.java" />
+        <option value="$PROJECT_DIR$/src/MyPoint.java" />
+        <option value="$PROJECT_DIR$/src/baitap/Person.java" />
+        <option value="$PROJECT_DIR$/src/baitap/GiamDoc.java" />
+        <option value="$PROJECT_DIR$/src/baitap/NvKinhdoanh.java" />
+        <option value="$PROJECT_DIR$/src/baitap/BaoVe.java" />
+        <option value="$PROJECT_DIR$/src/baitap/Employee.java" />
+        <option value="$PROJECT_DIR$/src/baitap/Main.java" />
+        <option value="$PROJECT_DIR$/src/bai1.java" />
+        <option value="$PROJECT_DIR$/src/MyChar.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Management/app.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="301" />
-    <option name="y" value="298" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="736" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -276,16 +347,49 @@
               <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
               <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.HQV-Management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.HQV-Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Revenue" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550042699286" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551250967677" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1.HQV-Management - Verson2.1" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -311,8 +415,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.app">
-    <configuration name="Circle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Circle" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baitap.Main" />
+      <module name="HQVManagementApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baitap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyChar" />
+      <module name="HQVManagementApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyPoint" />
       <module name="HQVManagementApp" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -338,33 +462,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bai2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai2" />
-      <module name="HQVManagementApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bai3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai3" />
-      <module name="HQVManagementApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.app" />
       <item itemvalue="Application.SinhVien" />
-      <item itemvalue="Application.bai2" />
-      <item itemvalue="Application.bai3" />
-      <item itemvalue="Application.Circle" />
+      <item itemvalue="Application.MyPoint" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MyChar" />
+      <item itemvalue="Application.app" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.app" />
-        <item itemvalue="Application.bai2" />
-        <item itemvalue="Application.Circle" />
-        <item itemvalue="Application.bai3" />
+        <item itemvalue="Application.MyChar" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MyPoint" />
         <item itemvalue="Application.SinhVien" />
       </list>
     </recent_temporary>
@@ -386,7 +496,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3619403" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3955224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -412,149 +522,29 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Codota" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/Vangtay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/Vangta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/OtherProduction.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/OtherProduction/other.java" />
-    <entry file="file://$PROJECT_DIR$/src/bai3.java" />
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/Gold.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Management/NewWin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/Production.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/History/history.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Payment/payment.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/OtherProduction/other.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/OtherProduction/ManagementOther.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="579" selection-start-line="579" selection-end-line="579" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Login/login.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SinhVien.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$USER_HOME$/Downloads/bai2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bai2 (2).java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bai2 (1).java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bai1.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bai3.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bai1 (1).java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bai3 (2).java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="64" column="93" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="64" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bai2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Circle.java" />
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/SanPhamKhac.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BackEnd/Animation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2794">
-          <caret line="147" column="35" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -565,21 +555,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/dashboard.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Management/app.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Revenue/revenue.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -610,70 +585,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/history/mua/muaKhac.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/history/ban/banVang.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/history/ban/banNgoaiTe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/history/ban/banKhac.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/history/mua/muaVang.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/history/mua/muaKhac.txt" />
+    <entry file="file://$PROJECT_DIR$/src/history/mua/muaNgoaiTe.txt" />
+    <entry file="file://$PROJECT_DIR$/src/history/ban/banVang.txt" />
+    <entry file="file://$PROJECT_DIR$/src/history/ban/banNgoaiTe.txt" />
+    <entry file="file://$PROJECT_DIR$/src/history/ban/banKhac.txt" />
+    <entry file="file://$PROJECT_DIR$/src/history/mua/muaVang.txt" />
+    <entry file="file://$PROJECT_DIR$/src/Data/data.txt" />
     <entry file="file://$PROJECT_DIR$/src/GUI/DatabaseProduct/DataPro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,40 +606,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java">
+    <entry file="file://$PROJECT_DIR$/src/FrontEnd/GUI/Dashboard/dashboard.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/Management.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="240" column="44" selection-start-line="240" selection-start-column="44" selection-end-line="240" selection-end-column="44" />
+        <state relative-caret-position="880">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/Login/ManagementLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="473" column="27" selection-start-line="473" selection-start-column="27" selection-end-line="473" selection-end-column="27" />
+        <state relative-caret-position="506">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/Vangta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/Production.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Payment/ManagementPayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="329" lean-forward="true" selection-start-line="329" selection-end-line="329" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/Data/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/history/ban/banVang.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4906">
+          <caret line="223" column="21" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SinhVien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/history/ban/banKhac.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/history/ban/banNgoaiTe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baitap/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baitap/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baitap/BaoVe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="32" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baitap/NvKinhdoanh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="33" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baitap/GiamDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="30" column="93" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/history/mua/muaKhac.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/history/mua/muaNgoaiTe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baitap/tuan9.java" />
+    <entry file="file://$PROJECT_DIR$/src/baitap/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyChar.java" />
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/history/mua/muaVang.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/MyInterface.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/Vietnamese.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/EnglishSpeaker.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/Human.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/MoneyReceiverInterface.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA33_Bai9/JAVA33_Bai9/src/Bank.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Management/app.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Management/ManagementFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#addVangtaProduction#0;class#ManagementFrame#0" />
+            <element signature="method#addVangtayProduction#0;class#ManagementFrame#0" />
+            <element signature="method#addNgoaiteProduction#0;class#ManagementFrame#0" />
+            <element signature="method#searchProduct#0;class#ManagementFrame#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEnd/GUI/Dashboard/dashboard.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330" />
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/ManagementDashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="1056">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/Management.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/Dashboard/dashboard.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="110">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Revenue/ManagementRevenue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
         </state>
       </provider>
     </entry>

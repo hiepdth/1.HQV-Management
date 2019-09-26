@@ -303,12 +303,6 @@ public class ManagementPayment {
                     }
                 }
             });
-            TongTien.setOnKeyReleased(new EventHandler<KeyEvent>() {
-                @Override
-                public void handle(KeyEvent event) {
-                    Tong.setText(String.format("%1$,0f", Double.parseDouble(TongTien.getText())));
-                }
-            });
             TongTien1.setOnKeyPressed(new EventHandler<KeyEvent>() {
                 @Override
                 public void handle(KeyEvent event) {
@@ -317,24 +311,12 @@ public class ManagementPayment {
                     }
                 }
             });
-            TongTien1.setOnKeyReleased(new EventHandler<KeyEvent>() {
-                @Override
-                public void handle(KeyEvent event) {
-                    Tong1.setText(String.format("%1$,0f", Double.parseDouble(TongTien1.getText())));
-                }
-            });
             TongTien2.setOnKeyPressed(new EventHandler<KeyEvent>() {
                 @Override
                 public void handle(KeyEvent event) {
                     if (event.getCode() == KeyCode.ENTER) {
                         KhacPayment();
                     }
-                }
-            });
-            TongTien2.setOnKeyReleased(new EventHandler<KeyEvent>() {
-                @Override
-                public void handle(KeyEvent event) {
-                    Tong2.setText(String.format("%1$,.0f", Double.parseDouble(TongTien2.getText())));
                 }
             });
         } catch (NumberFormatException e){

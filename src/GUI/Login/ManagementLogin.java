@@ -81,6 +81,7 @@ public class ManagementLogin {
     @FXML
     private void initialize() {
         _taikhoan.setText("dinhhiep");
+        _matkhau.setText("123");
         login(_taikhoan);
         login(_matkhau);
     }

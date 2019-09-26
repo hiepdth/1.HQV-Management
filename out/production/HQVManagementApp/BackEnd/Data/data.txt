@@ -1,37 +1,37 @@
 ﻿index:10
-Tiền:187025000.0
-Nhẫn ta:3000
-Kiềng ta:1000
-Tai ta:25
-Mặt ta:5
-Dây ta:10
-Lắc ta:15
-Vòng xi:5
+Tiền:390360000.0
+Nhẫn ta:49
+Kiềng ta:5
+Tai ta:10
+Mặt ta:9
+Dây ta:27
+Lắc ta:7
+Vòng xi:11
 Tổng vàng ta:1
-btmc:115.5
-sjc:100
-doji:100
-Nhẫn nam:60
+btmc:123.5
+sjc:3
+doji:149
+Nhẫn nam:58
 Nhẫn nữ:277
 Nhẫn cưới:110
 Bộ:5
 Kiềng tây:21
 Tai tây:154
-Mặt tây:132
-Dây tây:138
-Lắc tây:62
+Mặt tây:133
+Dây tây:140
+Lắc tây:60
 Tổng vàng tây:100
-USD:8024
-Yên:60000
+USD:5514
+Yên:50000
 Bạt:0
-Sing:250
+Sing:0
 Tệ:0
-Euro:2060
+Euro:0
 Úc:0
 Malaysia:0
 Canada:0
-Won:111000
-Đài Loan:101100
+Won:0
+Đài Loan:101300
 Bảng:10
 Rub:0
 Thụy sĩ:0

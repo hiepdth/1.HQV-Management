@@ -247,7 +247,8 @@ public class ManagementRevenue {
      */
 
 
-
+    String vangdoji="0";
+    String vangbt="0";
     public void updateSell(){
         try {
             //todo: cập nhật khi bán Vàng
@@ -301,17 +302,19 @@ public class ManagementRevenue {
                 //todo: BẢO TÍN MINH CHÂU
                 else if(info[2].toLowerCase().equals("bảo tín minh châu") ||info[2].toLowerCase().equals("btmc")) {
                     btmc.setText(subMoney(btmc.getText(), info[4]));
+                    vangbt = addMoney(vangbt, info[4]);
                     if(info[14].equals("Tiền mặt"))
                         money = addMoney(money, info[8]);
                 }
                 //todo: DOJI
                 else if(info[2].toLowerCase().equals("doji") ||info[2].toLowerCase().equals("do ji")) {
                     doji.setText(subMoney(doji.getText(), info[4]));
+                    vangdoji = addMoney(vangdoji, info[4]);
                     if(info[14].equals("Tiền mặt"))
                         money = addMoney(money, info[8]);
                 }
                 //todo: SJC
-                else if(info[2].toLowerCase().equals("sjc") ||info[2].toLowerCase().equals("vàng sjc")) {
+                else if(info[2].toLowerCase().equals("sjc") ||info[2].toLowerCase().equals("SJC")) {
                     sjc.setText(subMoney(sjc.getText(), info[4]));
                     if(info[14].equals("Tiền mặt"))
                         money = addMoney(money, info[8]);

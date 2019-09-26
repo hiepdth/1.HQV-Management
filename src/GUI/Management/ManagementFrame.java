@@ -6,6 +6,7 @@ import BackEnd.Vangta;
 import BackEnd.Vangtay;
 import GUI.Payment.ManagementPayment;
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -33,6 +35,8 @@ public class ManagementFrame {
     @FXML
     private ScrollPane vangtaProducts, vangtayProducts, ngoaiteProducts;
 
+    @FXML private JFXTextField lookup;
+    @FXML private JFXButton search;
     Management mana = new Management(); //todo: Đối tượng để ta lấy dữ liệu
 
     NewWin win = new NewWin();
@@ -97,6 +101,7 @@ public class ManagementFrame {
         else if (event.getTarget() == exit) {
             System.exit(0);
         }
+        //todo: Search
     }
     //todo: Hàm để thêm các sản phẩm vàng ta
     public void addVangtaProduction(ArrayList<Vangta>list){
@@ -186,6 +191,49 @@ public class ManagementFrame {
         }
         ngoaiteProducts.setContent(ngoaitePane);
     }
+    //todo: Hàm chức năng tìm kiếm
+    public void searchProduct(){
+        vangtaPane.getChildren().clear();
+        vangtayPane.getChildren().clear();
+        ngoaitePane.getChildren().clear();
+        lookup.setOnKeyReleased(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                String str = lookup.getText().trim();
+                for(Vangta v : mana.getVangtas()){
+                    if(v.getName().substring(0,str.length()).equalsIgnoreCase(str)){
+                        ImageView img = new ImageView(new Image(new File(v.getPath()).toURI().toString()));
+                        img.setFitHeight(90);
+                        img.setFitWidth(90);
+                        JFXButton but = new JFXButton(v.getName(),img);
+                        but.setPrefSize(150,120);
+                        but.setTextFill(Color.WHITE);
+                        but.setGraphicTextGap(15);
+                        but.setCursor(Cursor.HAND);
+                        but.setContentDisplay(ContentDisplay.TOP);
+                        but.getStylesheets().add("style.css");  //add css
+                        vangtaPane.getChildren().add(but);
+
+                        but.setOnAction(new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent event) {
+                                try {
+                                    win.makeWindow(new Stage(), "/GUI/Payment/payment.fxml");
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+                    }
+                    vangtaProducts.setContent(vangtaPane);
+                }
+            }
+        });
+        for(Vangta v : mana.getVangtas()){
+
+        }
+    }
+
     @FXML
     public void initialize(){
         addVangtaProduction(mana.getVangtas());
